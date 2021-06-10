@@ -33,6 +33,7 @@ public class BaseTests {
 	@BeforeSuite
 	public void readSetting() throws IOException
 	{
+		System.out.println("Test Git");
 		prop = new Properties();
 		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"/src/test/java/com/vtiger/config/setting.properties");
 		prop.load(fis);
