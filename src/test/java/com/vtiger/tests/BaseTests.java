@@ -4,7 +4,9 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
@@ -18,6 +20,7 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
+import com.vtiger.lib.Xls_Reader;
 import com.vtiger.pages.HeaderPage;
 import com.vtiger.pages.LoginPage;
 
@@ -29,6 +32,7 @@ public class BaseTests {
 	public static ExtentHtmlReporter htmlReporter;
 	public static ExtentReports extent;
 	public static ExtentTest logger;
+	public List<List<String>> ls;
 	
 	@BeforeSuite
 	public void readSetting() throws IOException
@@ -85,6 +89,30 @@ public class BaseTests {
 		htmlReporter.config().setReportName("Name of the Report Comes here "); 
 		            // Dark Theme
 		htmlReporter.config().setTheme(Theme.STANDARD); 
+	}
+	
+	public List<List<String>> ReadExcelDataIntoList(String path, String sheet)
+	{
+		Xls_Reader xr = new Xls_Reader(path);
+		//Xls_Reader xr = new Xls_Reader(System.getProperty("user.dir")+"/src/TestCases/TestData.xlsx");
+		int rowcount = xr.getRowCount(sheet);
+		int colcount = xr.getColumnCount(sheet);
+		List<List<String>> ls = new ArrayList<List<String>>();
+		
+		List<String> lst=null ;
+		for(int i=1;i<=rowcount;i++)
+		{
+			 lst = new ArrayList<String>();
+			 
+			for(int j=0;j<=colcount;j++)
+			{
+				String data = xr.getCellData(sheet, j, i).trim();
+				lst.add(data);
+			}
+			
+			ls.add(lst);
+		}
+		return ls;
 	}
 	
 	@AfterSuite

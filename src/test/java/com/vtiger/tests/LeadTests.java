@@ -1,20 +1,27 @@
 package com.vtiger.tests;
 
 
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import com.vtiger.pages.LeadPage;
 
 
+
 public class LeadTests extends BaseTests{
 	
-		
+	@BeforeClass
+	public void LoadData()
+	{
+		String path = System.getProperty("user.dir")+"/src/test/resources/TestData/vTigerTestData.xlsx";
+		ls=ReadExcelDataIntoList(path, "Lead");
+	}
 	
 	@Test (priority=0)
 	public void verifyLeadwithmandatoryfields_TC01()
 	{	
 		logger = extent.createTest("verify Lead with mandatory fields_TC01");
 		LeadPage ldp = new LeadPage(driver);
-		ldp.CreateLeadwithMandatoryField("Gedam", "Infosys");
+		ldp.CreateLeadwithMandatoryField(ls.get(1).get(3), ls.get(1).get(4));
 		extent.flush();
 	}
 	
@@ -24,8 +31,8 @@ public class LeadTests extends BaseTests{
 	{	
 		logger = extent.createTest("verify Lead with All Fields_TC02");
 		LeadPage ldp = new LeadPage(driver);
-		ldp.CreateLeadwithAllField(1, "Pratik", "Gedam", "Infosys", "SME", "8806659233");
-		ldp.AddressDescription("SB Road", "411061", "Pune", "Maharashtra", "India","Lead get from LinkedIn");
+		ldp.CreateLeadwithAllField(ls.get(2).get(1), ls.get(2).get(2), ls.get(2).get(3), ls.get(2).get(4),ls.get(2).get(5), ls.get(2).get(6));
+		ldp.AddressDescription(ls.get(2).get(7), ls.get(2).get(8), ls.get(2).get(9), ls.get(2).get(10), ls.get(2).get(11),ls.get(2).get(12));
 		extent.flush();
 	}
 	
