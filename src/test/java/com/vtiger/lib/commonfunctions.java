@@ -48,11 +48,11 @@ public class commonfunctions {
 		w.until(ExpectedConditions.visibilityOf(elm));
 		Select sel = new Select(elm);
 		sel.selectByIndex(val);
-		BaseTests.logger.pass(val+ " option has been selected from "+fieldname+" field");
+		BaseTests.logger.pass("Option "+val+ " has been selected from "+fieldname);
 		}
 		catch(Exception e)
 		{
-			BaseTests.logger.fail(val+ " has not been selected from "+fieldname+" field");
+			BaseTests.logger.fail("Option "+val+ " has not been selected from "+fieldname);
 			BaseTests.logger.info("Screenshot captured: <a href="+getScreenshot(driver,"file")+">Screenshot</a>");
 			System.out.println(e.getMessage());
 		}
@@ -66,11 +66,11 @@ public class commonfunctions {
 		w.until(ExpectedConditions.visibilityOf(elm));
 		Select sel = new Select(elm);
 		sel.selectByValue(val);
-		BaseTests.logger.pass(val+ " option has been selected from "+fieldname+" field");
+		BaseTests.logger.pass(val+ " has been selected from "+fieldname);
 		}
 		catch(Exception e)
 		{
-			BaseTests.logger.fail(val+ " has not been selected from "+fieldname+" field");
+			BaseTests.logger.fail(val+ " has not been selected from "+fieldname);
 			BaseTests.logger.info("Screenshot captured: <a href="+getScreenshot(driver,"file")+">Screenshot</a>");
 			System.out.println(e.getMessage());
 		}
@@ -172,31 +172,6 @@ public class commonfunctions {
 			return destination;
 		}
 		
-		public void ActionOnPopUpWindows(WebDriver driver, WebElement elm, String fieldname)
-		{
-			w = new WebDriverWait(driver,30);
-			try
-			{
-			w.until(ExpectedConditions.elementToBeClickable(elm));
-			
-			Set<String> set = driver.getWindowHandles();
-			Iterator <String> iter = set.iterator();
-			String fwindow = iter.next();
-			String swindow = iter.next();
-			driver.switchTo().window(swindow);
-			elm.click();
-			driver.close();
-			driver.switchTo().window(fwindow);
-			BaseTests.logger.pass(fieldname+ " has been Selected");
-			}
-			catch(Exception e)
-			{
-				BaseTests.logger.fail(fieldname+ " did not Clicked");
-				BaseTests.logger.info("Screenshot captured: <a href="+getScreenshot(driver,"file")+">Screenshot</a>");
-				System.out.println(e.getMessage());
-			}
-			
-		}
 	
 	
 

@@ -48,9 +48,6 @@ public class LeadPage extends HeaderPage{
 	@FindBy(name="code")
 	WebElement code;
 	
-	@FindBy(name="city")
-	WebElement city;
-	
 	@FindBy(name="state")
 	WebElement state;
 	
@@ -97,11 +94,10 @@ public class LeadPage extends HeaderPage{
 		cm.EnterValue(driver, mobile, mob,"Mobile Number");
 	}
 	
-	public void AddressDescription(String lan, String cod, String cit, String stat,String coun,String des) 
+	public void AddressDescription(String lan, String cod, String stat,String coun,String des) 
 	{
 		cm.EnterValue(driver,lane,lan,"Street");	
 		cm.EnterValue(driver,code,cod,"Pincode");
-		cm.EnterValue(driver,city,cit,"City");
 		cm.EnterValue(driver,state,stat,"State");
 		cm.EnterValue(driver,country,coun,"Country");
 		cm.EnterValue(driver, description, des,"Description");

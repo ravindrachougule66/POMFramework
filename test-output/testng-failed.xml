@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.vtiger.tests.ProductsTests">
+      <class name="com.vtiger.tests.LoginTests">
         <methods>
-          <include name="readSetting"/>
-          <include name="verifyCreateNewProduct_TC01"/>
-          <include name="CloseBrowser"/>
+          <include name="report"/>
+          <include name="verifyValidLogin_TC01"/>
+          <include name="LoadData"/>
         </methods>
-      </class> <!-- com.vtiger.tests.ProductsTests -->
+      </class> <!-- com.vtiger.tests.LoginTests -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

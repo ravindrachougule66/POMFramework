@@ -95,9 +95,6 @@ public class AccountPage extends HeaderPage{
 		driver.switchTo().window(swindow);
 		cm.ClickElement(driver, vtigerCRMInc, "EDFG Group Limited");
 		driver.switchTo().window(fwindow);
-		//Thread.sleep(2000);
-		//cm.ActionOnPopUpWindows(driver, vtigerCRMInc, "EDFG Group Limited");
-		//cm.ClickElement(driver, vtigerCRMInc, "EDFG Group Limited");
 		cm.EnterValue(driver, billcity, bcity, "City");
 		cm.ClickElement(driver, savebtn, "Save button");
 	}
