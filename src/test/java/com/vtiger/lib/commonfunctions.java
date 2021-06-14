@@ -5,7 +5,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Iterator;
 import java.util.Set;
-
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -130,7 +129,7 @@ public class commonfunctions {
 		}
 	}
 	
-	//verify element present
+		//verify element present
 		public boolean IsElementPresent(WebDriver driver,WebElement elm, String fieldname)
 		{
 			w = new WebDriverWait(driver,30);
@@ -170,6 +169,32 @@ public class commonfunctions {
 			}
 			//Returns the captured file path
 			return destination;
+		}
+		
+		public void ActionOnPopUpWindows(WebDriver driver, WebElement elm, String fieldname)
+		{
+			w = new WebDriverWait(driver,30);
+			try
+			{
+			w.until(ExpectedConditions.elementToBeClickable(elm));
+			
+			Set<String> set = driver.getWindowHandles();
+			Iterator <String> iter = set.iterator();
+			String fwindow = iter.next();
+			String swindow = iter.next();
+			driver.switchTo().window(swindow);
+			elm.click();
+			driver.close();
+			driver.switchTo().window(fwindow);
+			BaseTests.logger.pass(fieldname+ " has been Selected");
+			}
+			catch(Exception e)
+			{
+				BaseTests.logger.fail(fieldname+ " did not Clicked");
+				BaseTests.logger.info("Screenshot captured: <a href="+getScreenshot(driver,"file")+">Screenshot</a>");
+				System.out.println(e.getMessage());
+			}
+			
 		}
 		
 	

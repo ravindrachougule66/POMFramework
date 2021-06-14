@@ -59,7 +59,7 @@ public class LeadTests extends BaseTests{
 	{	
 		logger = extent.createTest("verify search Lead_TC05");
 		LeadPage ldp = new LeadPage(driver);
-		ldp.SearchName();
+		ldp.SearchName(ls.get(3).get(2), ls.get(3).get(3));
 		extent.flush();
 	}
 

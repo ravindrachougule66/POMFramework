@@ -5,10 +5,8 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 import com.aventstack.extentreports.ExtentReports;
@@ -16,7 +14,6 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.vtiger.lib.Xls_Reader;
-import com.vtiger.pages.HeaderPage;
 import com.vtiger.pages.LoginPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -28,7 +25,6 @@ public class LoginTests{
 	public static ExtentTest logger;
 	public List<List<String>> ls;
 	public LoginPage lp;
-	public HeaderPage hp;
 	
 
 	@BeforeSuite
@@ -37,18 +33,11 @@ public class LoginTests{
 		createReport();
 	}
 	
-	/*@BeforeClass
-	public void LoadData()
-	{
-		String path = System.getProperty("user.dir")+"/src/test/resources/TestData/vTigerTestData.xlsx";
-		ls=ReadExcelDataIntoList(path, "Login");
-	}*/
-	
 	@Test (priority=0)
 	public void verifyValidLogin_TC01()
 	{
-		try
-		{
+		
+	
 		logger = extent.createTest("verify Valid Login_TC01");
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
@@ -58,16 +47,9 @@ public class LoginTests{
 		String path = System.getProperty("user.dir")+"/src/test/resources/TestData/vTigerTestData.xlsx";
 		ls=ReadExcelDataIntoList(path, "Login");
 		lp.Login(ls.get(1).get(1), ls.get(1).get(2));
-		hp = new HeaderPage(driver);
-		hp.Logout();
 		driver.quit();
 		extent.flush();
-		}
-		catch(Exception e)
-		{
-			System.out.println(e.getMessage());
-			driver.quit();
-		}
+		
 	}
 	
 	@Test (priority=1)
@@ -81,7 +63,9 @@ public class LoginTests{
 		driver.get("http://localhost:100");
 		driver.manage().window().maximize();
 		lp = new LoginPage(driver);
-		lp.Login(ls.get(2).get(1), ls.get(2).get(2));
+		String path = System.getProperty("user.dir")+"/src/test/resources/TestData/vTigerTestData.xlsx";
+		ls=ReadExcelDataIntoList(path, "Login");
+		lp.InvalidLogin(ls.get(2).get(1), ls.get(2).get(2));
 		driver.quit();
 		extent.flush();
 		}
@@ -92,7 +76,7 @@ public class LoginTests{
 		}
 	}
 	
-	//@Test (priority=2)
+	@Test (priority=2)
 	public void verifyElementsOnLoginPage_TC03()
 	{
 		try
@@ -157,6 +141,8 @@ public class LoginTests{
 		}
 		return ls;
 	}
+	
+	
 
 
 }

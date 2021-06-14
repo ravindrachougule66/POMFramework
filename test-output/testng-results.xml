@@ -1,24 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="11563" started-at="2021-06-11T11:33:50 IST" finished-at="2021-06-11T11:34:02 IST">
+  <suite name="Default suite" duration-ms="22554" started-at="2021-06-14T14:15:40 IST" finished-at="2021-06-14T14:16:02 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="11563" started-at="2021-06-11T11:33:50 IST" finished-at="2021-06-11T11:34:02 IST">
+    <test name="Default test" duration-ms="22554" started-at="2021-06-14T14:15:40 IST" finished-at="2021-06-14T14:16:02 IST">
       <class name="com.vtiger.tests.LoginTests">
-        <test-method status="PASS" signature="report()[pri:0, instance:com.vtiger.tests.LoginTests@77ec78b9]" name="report" is-config="true" duration-ms="158" started-at="2021-06-11T11:33:50 IST" finished-at="2021-06-11T11:33:50 IST">
+        <test-method status="PASS" signature="report()[pri:0, instance:com.vtiger.tests.LoginTests@77ec78b9]" name="report" is-config="true" duration-ms="172" started-at="2021-06-14T14:15:40 IST" finished-at="2021-06-14T14:15:40 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- report -->
-        <test-method status="PASS" signature="verifyValidLogin_TC01()[pri:0, instance:com.vtiger.tests.LoginTests@77ec78b9]" name="verifyValidLogin_TC01" duration-ms="7050" started-at="2021-06-11T11:33:50 IST" finished-at="2021-06-11T11:33:57 IST">
+        <test-method status="PASS" signature="verifyValidLogin_TC01()[pri:0, instance:com.vtiger.tests.LoginTests@77ec78b9]" name="verifyValidLogin_TC01" duration-ms="11391" started-at="2021-06-14T14:15:40 IST" finished-at="2021-06-14T14:15:51 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyValidLogin_TC01 -->
-        <test-method status="PASS" signature="verifyInvalidLogin_TC02()[pri:1, instance:com.vtiger.tests.LoginTests@77ec78b9]" name="verifyInvalidLogin_TC02" duration-ms="4448" started-at="2021-06-11T11:33:57 IST" finished-at="2021-06-11T11:34:02 IST">
+        <test-method status="PASS" signature="verifyInvalidLogin_TC02()[pri:1, instance:com.vtiger.tests.LoginTests@77ec78b9]" name="verifyInvalidLogin_TC02" duration-ms="6115" started-at="2021-06-14T14:15:51 IST" finished-at="2021-06-14T14:15:57 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyInvalidLogin_TC02 -->
+        <test-method status="PASS" signature="verifyElementsOnLoginPage_TC03()[pri:2, instance:com.vtiger.tests.LoginTests@77ec78b9]" name="verifyElementsOnLoginPage_TC03" duration-ms="4985" started-at="2021-06-14T14:15:57 IST" finished-at="2021-06-14T14:16:02 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyElementsOnLoginPage_TC03 -->
       </class> <!-- com.vtiger.tests.LoginTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

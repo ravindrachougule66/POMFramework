@@ -118,11 +118,11 @@ public class LeadPage extends HeaderPage{
 		cm.SelectByIndex(driver, lead_status, 1, "Lead Status");		
 	}
 	
-	public void SearchName()
+	public void SearchName(String firstname,String lastname )
 	{
 		ClickLeads();
-		cm.EnterValue(driver, searchfname, "Pratik","search first name");
-		cm.EnterValue(driver, searchlname, "Gedam","search last name");
+		cm.EnterValue(driver, searchfname, firstname,"search first name");
+		cm.EnterValue(driver, searchlname, lastname,"search last name");
 		cm.ClickElement(driver, searchbtn,"Search Button");
 	}
 

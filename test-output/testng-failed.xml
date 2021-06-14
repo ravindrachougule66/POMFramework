@@ -7,7 +7,6 @@
         <methods>
           <include name="report"/>
           <include name="verifyValidLogin_TC01"/>
-          <include name="LoadData"/>
         </methods>
       </class> <!-- com.vtiger.tests.LoginTests -->
     </classes>

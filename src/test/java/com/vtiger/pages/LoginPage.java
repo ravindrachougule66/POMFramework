@@ -6,16 +6,17 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import com.vtiger.lib.commonfunctions;
+import com.vtiger.lib.logincommonfunctions;
 
 
-public class LoginPage {
+public class LoginPage extends HeaderPage{
 	
 	public WebDriver driver;
-	commonfunctions cm = new commonfunctions();
+	logincommonfunctions lcm = new logincommonfunctions();
 	
 	public LoginPage(WebDriver driver)
 	{
+		super(driver);
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
@@ -28,6 +29,8 @@ public class LoginPage {
 	@FindBy(name="Login") 
 	WebElement eleBtn;
 	
+	@FindBy(linkText="Logout")
+	WebElement logout;
 	
 	@FindBy(xpath="//img[@src='include/images/vtiger-crm.gif']") 
 	WebElement elelogo;
@@ -44,31 +47,36 @@ public class LoginPage {
 
 	public void Login(String userid, String pwd) 
 	{
-		cm.EnterValue(driver,eleUserid, userid,"Username");
-		cm.EnterValue(driver,elepwd, pwd,"Password");
-		cm.ClickElement(driver,eleBtn,"Login Button");
+		lcm.EnterValue(driver,eleUserid, userid,"Username");
+		lcm.EnterValue(driver,elepwd, pwd,"Password");
+		lcm.ClickElement(driver,eleBtn,"Login Button");
+		lcm.ClickElement(driver, logout, "Logout Button");
 	}
 	
 	public boolean InvalidLogin(String userid, String pwd) 
 	{
-		cm.EnterValue(driver,eleUserid, userid,"Username");
-		cm.EnterValue(driver,elepwd, pwd,"Password");
-		cm.ClickElement(driver,eleBtn,"Login Button");
-		return cm.IsElementPresent(driver, inlavidmsg,"Inlavid Login message");
+		lcm.EnterValue(driver,eleUserid, userid,"Username");
+		lcm.EnterValue(driver,elepwd, pwd,"Password");
+		lcm.ClickElement(driver,eleBtn,"Login Button");
+		return lcm.IsElementPresent(driver, inlavidmsg,"Inlavid Login message");
 	}
 	
 	public boolean verifylogo()
 	{
-		return cm.IsElementPresent(driver, elelogo,"Logo");
+		return lcm.IsElementPresent(driver, elelogo,"Logo");
 	}
 	public boolean verifytextKeyModules()
 	{
-		return cm.IsElementPresent(driver, keytext,"Key Modules");
+		return lcm.IsElementPresent(driver, keytext,"Key Modules");
 	}
 	public boolean Vtigercustomerportal()
 	{
-		return cm.IsElementPresent(driver, customerportal,"Vtiger Customer Portal link");
+		return lcm.IsElementPresent(driver, customerportal,"Vtiger Customer Portal link");
 	}
+	
+	
+	
+	
 	
 	
 	
