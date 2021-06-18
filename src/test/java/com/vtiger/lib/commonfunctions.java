@@ -17,6 +17,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.vtiger.tests.BaseTests;
 
 
+
 public class commonfunctions {
 	
 	public WebDriverWait w;
@@ -38,7 +39,7 @@ public class commonfunctions {
 			System.out.println(e.getMessage());
 		}
 	}
-	//Select values from Dropdown by index
+	//Select value from Drop-down by index
 	public void SelectByIndex(WebDriver driver,WebElement elm, int val, String fieldname)
 	{
 		w = new WebDriverWait(driver,30);
@@ -56,7 +57,7 @@ public class commonfunctions {
 			System.out.println(e.getMessage());
 		}
 	}
-	//Select values from Dropdown by value
+	//Select value from Drop-down by value
 	public void SelectByValue(WebDriver driver,WebElement elm, String val, String fieldname)
 	{
 		w = new WebDriverWait(driver,30);
@@ -74,6 +75,24 @@ public class commonfunctions {
 			System.out.println(e.getMessage());
 		}
 	}
+	//Select visible value from Drop-down
+		public void SelectByVisibleText(WebDriver driver,WebElement elm, String val, String fieldname)
+		{
+			w = new WebDriverWait(driver,30);
+			try
+			{
+			w.until(ExpectedConditions.visibilityOf(elm));
+			Select sel = new Select(elm);
+			sel.selectByVisibleText(val);
+			BaseTests.logger.pass(val+ " has been selected from "+fieldname);
+			}
+			catch(Exception e)
+			{
+				BaseTests.logger.fail(val+ " has not been selected from "+fieldname);
+				BaseTests.logger.info("Screenshot captured: <a href="+getScreenshot(driver,"file")+">Screenshot</a>");
+				System.out.println(e.getMessage());
+			}
+		}
 	//Alert Handler
 	public void AlertHandler(WebDriver driver)
 	{
@@ -174,30 +193,27 @@ public class commonfunctions {
 		public void ActionOnPopUpWindows(WebDriver driver, WebElement elm, String fieldname)
 		{
 			w = new WebDriverWait(driver,30);
-			try
-			{
-			w.until(ExpectedConditions.elementToBeClickable(elm));
-			
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
 			Set<String> set = driver.getWindowHandles();
 			Iterator <String> iter = set.iterator();
 			String fwindow = iter.next();
 			String swindow = iter.next();
 			driver.switchTo().window(swindow);
 			elm.click();
-			driver.close();
+			//driver.close();
 			driver.switchTo().window(fwindow);
 			BaseTests.logger.pass(fieldname+ " has been Selected");
-			}
-			catch(Exception e)
-			{
-				BaseTests.logger.fail(fieldname+ " did not Clicked");
-				BaseTests.logger.info("Screenshot captured: <a href="+getScreenshot(driver,"file")+">Screenshot</a>");
-				System.out.println(e.getMessage());
-			}
-			
 		}
+			
+			
+}
 		
 	
 	
 
-}
+

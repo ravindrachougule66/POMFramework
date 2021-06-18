@@ -1,29 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="22554" started-at="2021-06-14T14:15:40 IST" finished-at="2021-06-14T14:16:02 IST">
+  <suite name="Default suite" duration-ms="26639" started-at="2021-06-18T22:54:08 IST" finished-at="2021-06-18T22:54:35 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="22554" started-at="2021-06-14T14:15:40 IST" finished-at="2021-06-14T14:16:02 IST">
-      <class name="com.vtiger.tests.LoginTests">
-        <test-method status="PASS" signature="report()[pri:0, instance:com.vtiger.tests.LoginTests@77ec78b9]" name="report" is-config="true" duration-ms="172" started-at="2021-06-14T14:15:40 IST" finished-at="2021-06-14T14:15:40 IST">
+    <test name="Default test" duration-ms="26639" started-at="2021-06-18T22:54:08 IST" finished-at="2021-06-18T22:54:35 IST">
+      <class name="com.vtiger.tests.ActivitiesTests">
+        <test-method status="PASS" signature="BeginLoadData()[pri:0, instance:com.vtiger.tests.ActivitiesTests@77f99a05]" name="BeginLoadData" is-config="true" duration-ms="757" started-at="2021-06-18T22:53:54 IST" finished-at="2021-06-18T22:53:55 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- report -->
-        <test-method status="PASS" signature="verifyValidLogin_TC01()[pri:0, instance:com.vtiger.tests.LoginTests@77ec78b9]" name="verifyValidLogin_TC01" duration-ms="11391" started-at="2021-06-14T14:15:40 IST" finished-at="2021-06-14T14:15:51 IST">
+        </test-method> <!-- BeginLoadData -->
+        <test-method status="PASS" signature="readSetting()[pri:0, instance:com.vtiger.tests.ActivitiesTests@77f99a05]" name="readSetting" is-config="true" duration-ms="13404" started-at="2021-06-18T22:53:55 IST" finished-at="2021-06-18T22:54:08 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyValidLogin_TC01 -->
-        <test-method status="PASS" signature="verifyInvalidLogin_TC02()[pri:1, instance:com.vtiger.tests.LoginTests@77ec78b9]" name="verifyInvalidLogin_TC02" duration-ms="6115" started-at="2021-06-14T14:15:51 IST" finished-at="2021-06-14T14:15:57 IST">
+        </test-method> <!-- readSetting -->
+        <test-method status="PASS" signature="LoadData()[pri:0, instance:com.vtiger.tests.ActivitiesTests@77f99a05]" name="LoadData" is-config="true" duration-ms="83" started-at="2021-06-18T22:54:08 IST" finished-at="2021-06-18T22:54:08 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyInvalidLogin_TC02 -->
-        <test-method status="PASS" signature="verifyElementsOnLoginPage_TC03()[pri:2, instance:com.vtiger.tests.LoginTests@77ec78b9]" name="verifyElementsOnLoginPage_TC03" duration-ms="4985" started-at="2021-06-14T14:15:57 IST" finished-at="2021-06-14T14:16:02 IST">
+        </test-method> <!-- LoadData -->
+        <test-method status="PASS" signature="verifyNewEvent_TC01()[pri:0, instance:com.vtiger.tests.ActivitiesTests@77f99a05]" name="verifyNewEvent_TC01" duration-ms="2994" started-at="2021-06-18T22:54:08 IST" finished-at="2021-06-18T22:54:11 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyElementsOnLoginPage_TC03 -->
-      </class> <!-- com.vtiger.tests.LoginTests -->
+        </test-method> <!-- verifyNewEvent_TC01 -->
+        <test-method status="PASS" signature="verifySearchActivities_TC02()[pri:1, instance:com.vtiger.tests.ActivitiesTests@77f99a05]" name="verifySearchActivities_TC02" duration-ms="3960" started-at="2021-06-18T22:54:11 IST" finished-at="2021-06-18T22:54:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchActivities_TC02 -->
+        <test-method status="PASS" signature="DeleteActivities_TC03()[pri:2, instance:com.vtiger.tests.ActivitiesTests@77f99a05]" name="DeleteActivities_TC03" duration-ms="4122" started-at="2021-06-18T22:54:15 IST" finished-at="2021-06-18T22:54:19 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteActivities_TC03 -->
+        <test-method status="PASS" signature="verifyDuplicateOfActivity_TC04()[pri:3, instance:com.vtiger.tests.ActivitiesTests@77f99a05]" name="verifyDuplicateOfActivity_TC04" duration-ms="3151" started-at="2021-06-18T22:54:19 IST" finished-at="2021-06-18T22:54:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDuplicateOfActivity_TC04 -->
+        <test-method status="PASS" signature="verifyEditActivity_TC05()[pri:4, instance:com.vtiger.tests.ActivitiesTests@77f99a05]" name="verifyEditActivity_TC05" duration-ms="12259" started-at="2021-06-18T22:54:23 IST" finished-at="2021-06-18T22:54:35 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEditActivity_TC05 -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:com.vtiger.tests.ActivitiesTests@77f99a05]" name="CloseBrowser" is-config="true" duration-ms="1783" started-at="2021-06-18T22:54:35 IST" finished-at="2021-06-18T22:54:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- com.vtiger.tests.ActivitiesTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

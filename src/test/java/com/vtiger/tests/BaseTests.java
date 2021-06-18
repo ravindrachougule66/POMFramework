@@ -15,7 +15,6 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
-
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
@@ -35,16 +34,21 @@ public class BaseTests {
 	public List<List<String>> ls;
 	
 	@BeforeSuite
+	public void BeginLoadData()
+	{
+		String path = System.getProperty("user.dir")+"/src/test/resources/TestData/vTigerTestData.xlsx";
+		ls=ReadExcelDataIntoList(path, "Login");
+	}
+	@BeforeSuite
 	public void readSetting() throws IOException
 	{
-		System.out.println("Test Git");
 		prop = new Properties();
 		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"/src/test/java/com/vtiger/config/setting.properties");
 		prop.load(fis);
 		createReport();
 		LaunchApplication();
 	}
-	
+		
 	public void LaunchApplication()
 		{
 			logger = extent.createTest("Browser Application launched");
@@ -68,7 +72,11 @@ public class BaseTests {
 			int time = Integer.parseInt(prop.getProperty("wait"));
 			driver.manage().timeouts().implicitlyWait(time, TimeUnit.SECONDS);
 			LoginPage lp = new LoginPage(driver);
-			lp.Login(prop.getProperty("userid"), prop.getProperty("pwd"));
+			lp.InvalidLogin(ls.get(2).get(1), ls.get(2).get(2));
+			lp.verifylogo();
+			lp.verifytextKeyModules();
+			lp.Vtigercustomerportal();
+			lp.Login(ls.get(1).get(1), ls.get(1).get(2));
 			extent.flush();
 		}
 	
