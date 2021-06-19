@@ -56,7 +56,7 @@ public class AccountPage extends HeaderPage{
 	WebElement billcity;
 	
 	@FindBy(linkText="EDFG Group Limited")
-	WebElement vtigerCRMInc;
+	WebElement EDFGgroup;
 	
 	@FindBy(name="name")
 	WebElement aname;
@@ -89,13 +89,14 @@ public class AccountPage extends HeaderPage{
 		cm.EnterValue(driver, phone, ph, "Phone");
 		cm.EnterValue(driver, website, web, "Website");
 		cm.ClickElement(driver, changebtn, "Change button");
-		Set<String> set = driver.getWindowHandles();
+		cm.ActionOnPopUpWindows(driver, EDFGgroup, "EDFG Group Limited");
+		/*Set<String> set = driver.getWindowHandles();
 		Iterator <String> iter = set.iterator();
 		String fwindow = iter.next();
 		String swindow = iter.next();
 		driver.switchTo().window(swindow);
 		cm.ClickElement(driver, vtigerCRMInc, "EDFG Group Limited");
-		driver.switchTo().window(fwindow);
+		driver.switchTo().window(fwindow);*/
 		cm.EnterValue(driver, billcity, bcity, "City");
 		cm.ClickElement(driver, savebtn, "Save button");
 	}
