@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="6176" started-at="2021-06-20T01:05:39 IST" finished-at="2021-06-20T01:05:45 IST">
+  <suite name="Default suite" duration-ms="5905" started-at="2021-06-20T01:43:55 IST" finished-at="2021-06-20T01:44:01 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="6176" started-at="2021-06-20T01:05:39 IST" finished-at="2021-06-20T01:05:45 IST">
-      <class name="com.vtiger.tests.ContactsTests">
-        <test-method status="PASS" signature="BeginLoadData()[pri:0, instance:com.vtiger.tests.ContactsTests@a38d7a3]" name="BeginLoadData" is-config="true" duration-ms="740" started-at="2021-06-20T01:05:28 IST" finished-at="2021-06-20T01:05:29 IST">
+    <test name="Default test" duration-ms="5905" started-at="2021-06-20T01:43:55 IST" finished-at="2021-06-20T01:44:01 IST">
+      <class name="com.vtiger.tests.AccountTests">
+        <test-method status="PASS" signature="BeginLoadData()[pri:0, instance:com.vtiger.tests.AccountTests@a38d7a3]" name="BeginLoadData" is-config="true" duration-ms="773" started-at="2021-06-20T01:43:45 IST" finished-at="2021-06-20T01:43:46 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeginLoadData -->
-        <test-method status="PASS" signature="readSetting()[pri:0, instance:com.vtiger.tests.ContactsTests@a38d7a3]" name="readSetting" is-config="true" duration-ms="10222" started-at="2021-06-20T01:05:29 IST" finished-at="2021-06-20T01:05:39 IST">
+        <test-method status="PASS" signature="readSetting()[pri:0, instance:com.vtiger.tests.AccountTests@a38d7a3]" name="readSetting" is-config="true" duration-ms="9625" started-at="2021-06-20T01:43:46 IST" finished-at="2021-06-20T01:43:55 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- readSetting -->
-        <test-method status="PASS" signature="ContactSearchAndDelete_TC02()[pri:0, instance:com.vtiger.tests.ContactsTests@a38d7a3]" name="ContactSearchAndDelete_TC02" duration-ms="6125" started-at="2021-06-20T01:05:39 IST" finished-at="2021-06-20T01:05:45 IST">
+        <test-method status="PASS" signature="verifyCreateNewAccountWithAllFields_TC03()[pri:3, instance:com.vtiger.tests.AccountTests@a38d7a3]" name="verifyCreateNewAccountWithAllFields_TC03" duration-ms="5845" started-at="2021-06-20T01:43:55 IST" finished-at="2021-06-20T01:44:01 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ContactSearchAndDelete_TC02 -->
-        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:com.vtiger.tests.ContactsTests@a38d7a3]" name="CloseBrowser" is-config="true" duration-ms="1912" started-at="2021-06-20T01:05:45 IST" finished-at="2021-06-20T01:05:47 IST">
+        </test-method> <!-- verifyCreateNewAccountWithAllFields_TC03 -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:com.vtiger.tests.AccountTests@a38d7a3]" name="CloseBrowser" is-config="true" duration-ms="1748" started-at="2021-06-20T01:44:01 IST" finished-at="2021-06-20T01:44:03 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-      </class> <!-- com.vtiger.tests.ContactsTests -->
+      </class> <!-- com.vtiger.tests.AccountTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

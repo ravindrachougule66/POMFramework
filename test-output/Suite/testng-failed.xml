@@ -5,6 +5,7 @@
     <classes>
       <class name="com.vtiger.tests.ProductsTests">
         <methods>
+          <include name="BeginLoadData"/>
           <include name="readSetting"/>
           <include name="verifyCreateNewProduct_TC01"/>
           <include name="CloseBrowser"/>

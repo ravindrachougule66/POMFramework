@@ -1,8 +1,5 @@
 package com.vtiger.pages;
 
-import java.util.Iterator;
-import java.util.Set;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -68,13 +65,6 @@ public class AccountPage extends HeaderPage{
 		cm.ClickElement(driver, searchbtn, "Search button");
 		//ClickSearchButton();
 	}
-	public void showSubMenu(String bname)
-	{
-		cm.MoveToElement(driver, showSubMenu, "submenu");
-		cm.ClickElement(driver, NewPriceBook, "From submenu 'New Price Book'");
-		cm.EnterValue(driver, bookname, bname, "Price Book name");
-		cm.ClickElement(driver, savebtn, "Save button");
-	}
 	public void CreateNewAccountWithMandatoryField(String aname)
 	{
 		ClickNewAccount();
@@ -90,13 +80,6 @@ public class AccountPage extends HeaderPage{
 		cm.EnterValue(driver, website, web, "Website");
 		cm.ClickElement(driver, changebtn, "Change button");
 		cm.ActionOnPopUpWindows(driver, EDFGgroup, "EDFG Group Limited");
-		/*Set<String> set = driver.getWindowHandles();
-		Iterator <String> iter = set.iterator();
-		String fwindow = iter.next();
-		String swindow = iter.next();
-		driver.switchTo().window(swindow);
-		cm.ClickElement(driver, vtigerCRMInc, "EDFG Group Limited");
-		driver.switchTo().window(fwindow);*/
 		cm.EnterValue(driver, billcity, bcity, "City");
 		cm.ClickElement(driver, savebtn, "Save button");
 	}
