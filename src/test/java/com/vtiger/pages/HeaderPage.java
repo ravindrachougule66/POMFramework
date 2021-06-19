@@ -127,7 +127,7 @@ public class HeaderPage {
 	}
 	public void ClickRSS() 
 	{
-		cm.ClickElement(driver, RSS, "RSS");
+		cm.ClickElement(driver, RSS, "RSS menu");
 	}
 	public void ClickReports() 
 	{

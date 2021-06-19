@@ -130,7 +130,7 @@ public class commonfunctions {
 			System.out.println(e.getMessage());
 		}
 	}
-	
+	//Move to element by mouse
 	public void MoveToElement(WebDriver driver,WebElement elm, String fieldname)
 	{
 		w = new WebDriverWait(driver,30);
@@ -166,7 +166,7 @@ public class commonfunctions {
 			}
 			return val;
 		}
-		
+		//Captured Screenshot
 		public static String getScreenshot(WebDriver driver, String screenshotName)  
 		{
 			//below line is just to append the date format with the screenshot name to avoid duplicate names		
@@ -188,12 +188,12 @@ public class commonfunctions {
 			//Returns the captured file path
 			return destination;
 		}
-		
+		//Select value from present items on popup window
 		public void ActionOnPopUpWindows(WebDriver driver, WebElement elm, String fieldname)
 		{
 			w = new WebDriverWait(driver,30);
 			try {
-				Thread.sleep(2000);
+				Thread.sleep(1000);
 			} catch (InterruptedException e1) {
 				// TODO Auto-generated catch block
 				e1.printStackTrace();
@@ -204,9 +204,29 @@ public class commonfunctions {
 			String swindow = iter.next();
 			driver.switchTo().window(swindow);
 			elm.click();
-			//driver.close();
 			driver.switchTo().window(fwindow);
 			BaseTests.logger.pass(fieldname+ " has been Selected");
+		}
+		//Enter value in text box on popup window
+		public void ActionOnPopUpWindowsEnterValue(WebDriver driver, WebElement elm1,WebElement elm2,String val,String fieldname)
+		{
+			w = new WebDriverWait(driver,30);
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+			Set<String> set = driver.getWindowHandles();
+			Iterator <String> iter = set.iterator();
+			String fwindow = iter.next();
+			String swindow = iter.next();
+			driver.switchTo().window(swindow);
+			elm1.clear();
+			elm1.sendKeys(val);
+			elm2.click();
+			driver.switchTo().window(fwindow);
+			BaseTests.logger.pass(fieldname+ " has been Entered and submitted");
 		}
 			
 			
