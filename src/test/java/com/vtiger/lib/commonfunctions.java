@@ -76,23 +76,23 @@ public class commonfunctions {
 		}
 	}
 	//Select visible value from Drop-down
-		public void SelectByVisibleText(WebDriver driver,WebElement elm, String val, String fieldname)
+	public void SelectByVisibleText(WebDriver driver,WebElement elm, String val, String fieldname)
+	{
+		w = new WebDriverWait(driver,30);
+		try
 		{
-			w = new WebDriverWait(driver,30);
-			try
-			{
-			w.until(ExpectedConditions.visibilityOf(elm));
-			Select sel = new Select(elm);
-			sel.selectByVisibleText(val);
-			BaseTests.logger.pass(val+ " has been selected from "+fieldname);
-			}
-			catch(Exception e)
-			{
-				BaseTests.logger.fail(val+ " has not been selected from "+fieldname);
-				BaseTests.logger.info("Screenshot captured: <a href="+getScreenshot(driver,"file")+">Screenshot</a>");
-				System.out.println(e.getMessage());
-			}
+		w.until(ExpectedConditions.visibilityOf(elm));
+		Select sel = new Select(elm);
+		sel.selectByVisibleText(val);
+		BaseTests.logger.pass(val+ " has been selected from "+fieldname);
 		}
+		catch(Exception e)
+		{
+			BaseTests.logger.fail(val+ " has not been selected from "+fieldname);
+			BaseTests.logger.info("Screenshot captured: <a href="+getScreenshot(driver,"file")+">Screenshot</a>");
+			System.out.println(e.getMessage());
+		}
+	}
 	//Alert Handler
 	public void AlertHandler(WebDriver driver)
 	{
@@ -147,7 +147,6 @@ public class commonfunctions {
 			System.out.println(e.getMessage());
 		}
 	}
-	
 		//verify element present
 		public boolean IsElementPresent(WebDriver driver,WebElement elm, String fieldname)
 		{

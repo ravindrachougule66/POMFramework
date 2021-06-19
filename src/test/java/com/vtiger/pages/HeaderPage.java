@@ -90,6 +90,13 @@ public class HeaderPage {
 	@FindBy(xpath="(//input[@name='button'])[3]")
 	WebElement savebutton;
 	
+	@FindBy(xpath=("(//input[@type='submit'])[3]"))
+	WebElement deletebutton;
+	
+	public void ClickDeleteButton()
+	{
+		cm.ClickElement(driver, deletebutton, "Delete button");
+	}
 	public void ClickSaveButton() 
 	{
 		cm.ClickElement(driver, savebutton, "Save button");

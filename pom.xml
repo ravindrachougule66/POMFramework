@@ -4,9 +4,6 @@
   <artifactId>POMFramework</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 
-
-
-
 <dependencies>
 
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
@@ -53,7 +50,6 @@
 			<artifactId>xmlbeans</artifactId>
 			<version>2.4.0</version>
 		</dependency>
-
 
 		<dependency>
 			<groupId>org.apache.poi</groupId>
