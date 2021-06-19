@@ -3,12 +3,12 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
+      <class name="com.vtiger.tests.ContactsTests"/>
       <class name="com.vtiger.tests.LeadTests"/>
       <class name="com.vtiger.tests.CalenderTest"/>
       <class name="com.vtiger.tests.ProductsTests"/>
       <class name="com.vtiger.tests.AccountTests"/>
       <class name="com.vtiger.tests.ActivitiesTests"/>
-      <class name="com.vtiger.tests.LoginTests"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

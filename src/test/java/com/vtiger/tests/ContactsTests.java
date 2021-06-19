@@ -6,7 +6,7 @@ import com.vtiger.pages.ContactsPage;
 
 public class ContactsTests extends BaseTests{
 	
-	//@Test (priority=0)
+	@Test (priority=0)
 	public void CreateNewContact_TC01() throws InterruptedException
 	{		
 		logger = extent.createTest("verify Create New Contact_TC01");
