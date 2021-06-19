@@ -86,7 +86,7 @@ public class LeadPage extends HeaderPage{
 	public void CreateLeadwithAllField(String salutation,String firstname,String lastname,String company,String design,String mob) 
 	{
 		ClickNewLead();
-		cm.SelectByValue(driver, sal, salutation, "Salutationtype");
+		cm.SelectByValue(driver, sal, salutation, "Salutation type");
 		cm.EnterValue(driver, fname, firstname,"Firstname");
 		cm.EnterValue(driver, lname, lastname,"Lastname");
 		cm.EnterValue(driver, comp, company,"Company");

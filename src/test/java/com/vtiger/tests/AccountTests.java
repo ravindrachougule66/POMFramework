@@ -6,7 +6,7 @@ import com.vtiger.pages.AccountPage;
 
 public class AccountTests extends BaseTests{
 	
-	//@Test (priority=0)
+	@Test (priority=0)
 	public void verifyAccountSearch_TC01()
 	{		
 		logger = extent.createTest("verify Account Search_TC01");

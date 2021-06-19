@@ -130,6 +130,7 @@ public class ActivitiesPage extends HeaderPage{
 		cm.SelectByValue(driver, parent_type, ptype, "Parent type");
 		Thread.sleep(2000);
 		cm.ClickElement(driver, changebtn, "Change button");
+		Thread.sleep(2000);
 		cm.ActionOnPopUpWindows(driver, acctname,"EDFG Group Limited");
 		cm.SelectByVisibleText(driver, eventstatus, estatus, "Event Status");
 		cm.ClickElement(driver, cbtn, "Change contact button");

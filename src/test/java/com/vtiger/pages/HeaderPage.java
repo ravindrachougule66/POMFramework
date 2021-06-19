@@ -21,12 +21,6 @@ public class HeaderPage {
 	@FindBy(linkText="Logout")
 	WebElement logout;
 	
-	@FindBy(linkText="New Account")
-	WebElement NewAccount;
-	
-	@FindBy(linkText="New Lead")
-	WebElement newlead;
-	
 	@FindBy(linkText="Accounts")
 	WebElement Accounts;
 	
@@ -42,12 +36,6 @@ public class HeaderPage {
 	@FindBy(linkText="Activities")
 	WebElement Activities;
 	
-	@FindBy(linkText="New Event")
-	WebElement NewEvent;
-	
-	@FindBy(linkText="New Product")
-	WebElement NewProduct;
-	
 	@FindBy(linkText="Contacts")
 	WebElement Contacts;
 	
@@ -60,7 +48,7 @@ public class HeaderPage {
 	@FindBy(linkText="Emails")
 	WebElement Emails;
 	
-	@FindBy(linkText="Help Desk")
+	@FindBy(linkText="HelpDesk")
 	WebElement HelpDesk;
 	
 	@FindBy(linkText="Dashboard")
@@ -81,21 +69,54 @@ public class HeaderPage {
 	@FindBy(linkText="Reports")
 	WebElement Reports;
 	
+	@FindBy(linkText="New Account")
+	WebElement NewAccount;
+	
+	@FindBy(linkText="New Lead")
+	WebElement newlead;
+	
+	@FindBy(linkText="New Event")
+	WebElement NewEvent;
+	
+	@FindBy(linkText="New Product")
+	WebElement NewProduct;
+	
+	@FindBy(linkText="New Contact")
+	WebElement NewContact;
+	
+	@FindBy(xpath="(//input[@name='button'])[2]")
+	WebElement searchbutton;
+	
+	@FindBy(xpath="(//input[@name='button'])[3]")
+	WebElement savebutton;
+	
+	public void ClickSaveButton() 
+	{
+		cm.ClickElement(driver, savebutton, "Save button");
+	}
+	public void ClickSearchButton() 
+	{
+		cm.ClickElement(driver, searchbutton, "Search button");
+	}
+	public void ClickNewContact() 
+	{
+		cm.ClickElement(driver, NewContact, "New Contact link");
+	}
 	public void ClickNewAccount() 
 	{
 		cm.ClickElement(driver, NewAccount, "New Account link");
 	}
 	public void ClickQuotes() 
 	{
-		cm.ClickElement(driver, Quotes, "Quotes");
+		cm.ClickElement(driver, Quotes, "Quotes menu");
 	}
 	public void ClickOrders() 
 	{
-		cm.ClickElement(driver, Orders, "Orders");
+		cm.ClickElement(driver, Orders, "Orders menu");
 	}
 	public void ClickInvoice() 
 	{
-		cm.ClickElement(driver, Invoice, "Invoice");
+		cm.ClickElement(driver, Invoice, "Invoice menu");
 	}
 	public void ClickRSS() 
 	{
@@ -103,11 +124,11 @@ public class HeaderPage {
 	}
 	public void ClickReports() 
 	{
-		cm.ClickElement(driver, Reports, "Reports");
+		cm.ClickElement(driver, Reports, "Reports menu");
 	}
 	public void ClickContacts() 
 	{
-		cm.ClickElement(driver, Contacts, "Contacts");
+		cm.ClickElement(driver, Contacts, "Contacts menu");
 	}
 	public void ClickPotentials() 
 	{
@@ -115,19 +136,19 @@ public class HeaderPage {
 	}
 	public void ClickNotes() 
 	{
-		cm.ClickElement(driver, Notes, "Notes");
+		cm.ClickElement(driver, Notes, "Notes menu");
 	}
 	public void ClickEmails() 
 	{
-		cm.ClickElement(driver, Emails, "Emails");
+		cm.ClickElement(driver, Emails, "Emails menu");
 	}
 	public void ClickHelpDesk() 
 	{
-		cm.ClickElement(driver, HelpDesk, "HelpDesk");
+		cm.ClickElement(driver, HelpDesk, "HelpDesk menu");
 	}
 	public void ClickDashboard() 
 	{
-		cm.ClickElement(driver, Dashboard, "Dashboard");
+		cm.ClickElement(driver, Dashboard, "Dashboard menu");
 	}
 	public void ClickProducts() 
 	{
