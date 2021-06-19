@@ -21,6 +21,15 @@ public class HeaderPage {
 	@FindBy(linkText="Logout")
 	WebElement logout;
 	
+	@FindBy(xpath="(//input[@name='button'])[2]")
+	WebElement searchbutton;
+	
+	@FindBy(xpath="(//input[@name='button'])[3]")
+	WebElement savebutton;
+	
+	@FindBy(xpath=("(//input[@type='submit'])[3]"))
+	WebElement deletebutton;
+	
 	@FindBy(linkText="Accounts")
 	WebElement Accounts;
 	
@@ -84,26 +93,12 @@ public class HeaderPage {
 	@FindBy(linkText="New Contact")
 	WebElement NewContact;
 	
-	@FindBy(xpath="(//input[@name='button'])[2]")
-	WebElement searchbutton;
+	@FindBy(linkText="New Potential")
+	WebElement NewPotential;
 	
-	@FindBy(xpath="(//input[@name='button'])[3]")
-	WebElement savebutton;
-	
-	@FindBy(xpath=("(//input[@type='submit'])[3]"))
-	WebElement deletebutton;
-	
-	public void ClickDeleteButton()
+	public void ClickNewPotential() 
 	{
-		cm.ClickElement(driver, deletebutton, "Delete button");
-	}
-	public void ClickSaveButton() 
-	{
-		cm.ClickElement(driver, savebutton, "Save button");
-	}
-	public void ClickSearchButton() 
-	{
-		cm.ClickElement(driver, searchbutton, "Search button");
+		cm.ClickElement(driver, NewPotential, "New Potential");
 	}
 	public void ClickNewContact() 
 	{
@@ -112,6 +107,18 @@ public class HeaderPage {
 	public void ClickNewAccount() 
 	{
 		cm.ClickElement(driver, NewAccount, "New Account link");
+	}
+	public void ClickNewProduct() 
+	{
+		cm.ClickElement(driver, NewProduct, "New Product link");
+	}
+	public void ClickNewEvent() 
+	{
+		cm.ClickElement(driver, NewEvent, "New Event link");
+	}
+	public void ClickNewLead() 
+	{
+		cm.ClickElement(driver, newlead, "New Lead link");
 	}
 	public void ClickQuotes() 
 	{
@@ -139,7 +146,7 @@ public class HeaderPage {
 	}
 	public void ClickPotentials() 
 	{
-		cm.ClickElement(driver, Potentials, "Potentials");
+		cm.ClickElement(driver, Potentials, "Potentials menu");
 	}
 	public void ClickNotes() 
 	{
@@ -161,17 +168,9 @@ public class HeaderPage {
 	{
 		cm.ClickElement(driver, Products, "Products menu");
 	}
-	public void ClickNewProduct() 
-	{
-		cm.ClickElement(driver, NewProduct, "New Product link");
-	}
 	public void ClickActivities() 
 	{
 		cm.ClickElement(driver, Activities, "Activities menu");
-	}
-	public void ClickNewEvent() 
-	{
-		cm.ClickElement(driver, NewEvent, "New Event link");
 	}
 	public void ClickLeads() 
 	{
@@ -181,10 +180,6 @@ public class HeaderPage {
 	{
 		cm.ClickElement(driver, Calender, "Calender menu");
 	}
-	public void ClickNewLead() 
-	{
-		cm.ClickElement(driver, newlead, "New Lead link");
-	}
 	public void ClickAccounts() 
 	{
 		cm.ClickElement(driver, Accounts, "Accounts menu");
@@ -192,6 +187,18 @@ public class HeaderPage {
 	public void Logout()
 	{
 		cm.ClickElement(driver, logout, "Logout link");
+	}
+	public void ClickDeleteButton()
+	{
+		cm.ClickElement(driver, deletebutton, "Delete button");
+	}
+	public void ClickSaveButton() 
+	{
+		cm.ClickElement(driver, savebutton, "Save button");
+	}
+	public void ClickSearchButton() 
+	{
+		cm.ClickElement(driver, searchbutton, "Search button");
 	}
 
 }
