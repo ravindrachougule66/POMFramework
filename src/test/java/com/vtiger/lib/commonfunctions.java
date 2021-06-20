@@ -93,7 +93,7 @@ public class commonfunctions {
 			System.out.println(e.getMessage());
 		}
 	}
-	//Alert Handler
+	//Alert Handler-Accept
 	public void AlertHandler(WebDriver driver)
 	{
 		String val = "None";
@@ -103,16 +103,34 @@ public class commonfunctions {
 		w.until(ExpectedConditions.alertIsPresent());
 		val = driver.switchTo().alert().getText();
 		driver.switchTo().alert().accept();
-		BaseTests.logger.fail(val + " then clicked 'OK'");
-		BaseTests.logger.info("Screenshot captured: <a href="+getScreenshot(driver,"file")+">Screenshot</a>");
+		BaseTests.logger.pass("Getting alert "+val + " then clicked 'OK'");
 		}
 		catch(Exception e)
 		{
-			BaseTests.logger.fail(val + " not clicked 'OK'");
+			BaseTests.logger.fail("Getting alert "+val + " not clicked 'OK'");
 			BaseTests.logger.info("Screenshot captured: <a href="+getScreenshot(driver,"file")+">Screenshot</a>");
 			System.out.println(e.getMessage());
 		}
-	}		
+	}
+	//Alert Handler-dismiss
+	public void AlertHandlerDismiss(WebDriver driver)
+	{
+		String val = "None";
+		w = new WebDriverWait(driver,30);
+		try
+		{
+		w.until(ExpectedConditions.alertIsPresent());
+		val = driver.switchTo().alert().getText();
+		driver.switchTo().alert().dismiss();
+		BaseTests.logger.pass("Getting alert "+val + " then clicked 'Cancel'");
+		}
+		catch(Exception e)
+		{
+			BaseTests.logger.fail("Getting alert "+val + " not clicked 'Cancel'");
+			BaseTests.logger.info("Screenshot captured: <a href="+getScreenshot(driver,"file")+">Screenshot</a>");
+			System.out.println(e.getMessage());
+		}
+	}
 	//Click on element
 	public void ClickElement(WebDriver driver,WebElement elm, String fieldname)
 	{
