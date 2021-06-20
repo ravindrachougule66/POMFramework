@@ -99,10 +99,9 @@ public class HeaderPage {
 	@FindBy(name="Duplicate")
 	WebElement Duplicate;
 	
-	public void ClickDuplicate()
-	{
-		cm.ClickElement(driver, Duplicate, "Duplicate button");
-	}
+	@FindBy(name="Edit")
+	WebElement Edit;
+	
 	public void ClickNewPotential() 
 	{
 		cm.ClickElement(driver, NewPotential, "New Potential");
@@ -206,6 +205,14 @@ public class HeaderPage {
 	public void ClickSearchButton() 
 	{
 		cm.ClickElement(driver, searchbutton, "Search button");
+	}
+	public void ClickDuplicateButton()
+	{
+		cm.ClickElement(driver, Duplicate, "Duplicate button");
+	}
+	public void ClickEditButton()
+	{
+		cm.ClickElement(driver, Edit, "Edit button");
 	}
 
 }
