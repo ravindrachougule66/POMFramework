@@ -8,7 +8,9 @@
       <class name="com.vtiger.tests.CalenderTest"/>
       <class name="com.vtiger.tests.ProductsTests"/>
       <class name="com.vtiger.tests.AccountTests"/>
+      <class name="com.vtiger.tests.RSSTests"/>
       <class name="com.vtiger.tests.ActivitiesTests"/>
+      <class name="com.vtiger.tests.PotentialTests"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
