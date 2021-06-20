@@ -19,89 +19,113 @@ public class HeaderPage {
 	}
 	
 	@FindBy(linkText="Logout")
-	WebElement logout;
-	
+	WebElement logout;	
 	@FindBy(xpath="(//input[@name='button'])[2]")
-	WebElement searchbutton;
-	
+	WebElement searchbutton;	
 	@FindBy(xpath="(//input[@name='button'])[3]")
-	WebElement savebutton;
-	
+	WebElement savebutton;	
 	@FindBy(xpath=("(//input[@type='submit'])[3]"))
-	WebElement deletebutton;
-	
+	WebElement deletebutton;	
 	@FindBy(linkText="Accounts")
-	WebElement Accounts;
-	
+	WebElement Accounts;	
 	@FindBy(linkText="Products")
 	WebElement Products;
-	
 	@FindBy(linkText="Calendar")
 	WebElement Calender;
-	
 	@FindBy(linkText="Leads")
 	WebElement leads;
-	
 	@FindBy(linkText="Activities")
 	WebElement Activities;
-	
 	@FindBy(linkText="Contacts")
 	WebElement Contacts;
-	
 	@FindBy(linkText="Potentials")
 	WebElement Potentials;
-	
 	@FindBy(linkText="Notes")
 	WebElement Notes;
-	
 	@FindBy(linkText="Emails")
 	WebElement Emails;
-	
 	@FindBy(linkText="HelpDesk")
 	WebElement HelpDesk;
-	
 	@FindBy(linkText="Dashboard")
-	WebElement Dashboard;
-	
+	WebElement Dashboard;	
 	@FindBy(linkText="Quotes")
-	WebElement Quotes;
-	
+	WebElement Quotes;	
 	@FindBy(linkText="Orders")
-	WebElement Orders;
-	
+	WebElement Orders;	
 	@FindBy(linkText="Invoice")
 	WebElement Invoice;
-	
 	@FindBy(linkText="RSS")
 	WebElement RSS;
-	
 	@FindBy(linkText="Reports")
-	WebElement Reports;
-	
+	WebElement Reports;	
+	@FindBy(name="Duplicate")
+	WebElement Duplicate;	
+	@FindBy(name="Edit")
+	WebElement Edit;	
+	@FindBy(xpath="//a[@id='showSubMenu']")
+	WebElement showSubMenu;	
+	@FindBy(linkText="New Vendor")
+	WebElement NewVendor;	
 	@FindBy(linkText="New Account")
-	WebElement NewAccount;
-	
+	WebElement NewAccount;	
 	@FindBy(linkText="New Lead")
-	WebElement newlead;
-	
+	WebElement newlead;	
 	@FindBy(linkText="New Event")
-	WebElement NewEvent;
-	
+	WebElement NewEvent;	
 	@FindBy(linkText="New Product")
 	WebElement NewProduct;
-	
 	@FindBy(linkText="New Contact")
 	WebElement NewContact;
-	
+	@FindBy(linkText="New Task")
+	WebElement NewTask;	
+	@FindBy(linkText="New PriceBook")
+	WebElement NewPriceBook;	
 	@FindBy(linkText="New Potential")
 	WebElement NewPotential;
+	@FindBy(linkText="New Quote")
+	WebElement NewQuote;
+	@FindBy(linkText="New Purchase Order")
+	WebElement NewPurchaseOrder;
+	@FindBy(linkText="New Sales Order")
+	WebElement NewSalesOrder;
+	@FindBy(linkText="New Invoice")
+	WebElement NewInvoice;
 	
-	@FindBy(name="Duplicate")
-	WebElement Duplicate;
-	
-	@FindBy(name="Edit")
-	WebElement Edit;
-	
+	public void ClickNewInvoice() 
+	{
+		cm.ClickElement(driver, showSubMenu, "show SubMenu");
+		cm.ClickElement(driver, NewInvoice, "New Invoice");
+	}
+	public void ClickNewSalesOrder() 
+	{
+		cm.ClickElement(driver, showSubMenu, "show SubMenu");
+		cm.ClickElement(driver, NewSalesOrder, "New Sales Order");
+	}
+	public void ClickNewPurchaseOrder() 
+	{
+		cm.ClickElement(driver, showSubMenu, "show SubMenu");
+		cm.ClickElement(driver, NewPurchaseOrder, "New Purchase Order");
+	}
+	public void ClickNewQuote() 
+	{
+		cm.ClickElement(driver, showSubMenu, "show SubMenu");
+		cm.ClickElement(driver, NewQuote, "New Quote");
+	}
+	public void ClickNewPriceBook() 
+	{
+		cm.ClickElement(driver, showSubMenu, "show SubMenu");
+		cm.ClickElement(driver, NewPriceBook, "New Price Book");
+	}
+	public void ClickNewTask() 
+	{
+		cm.ClickElement(driver, showSubMenu, "show SubMenu");
+		cm.ClickElement(driver, NewTask, "New Task");
+	}
+	public void ClickNewVendor() 
+	{
+		cm.ClickElement(driver, showSubMenu, "show SubMenu");
+		cm.ClickElement(driver, NewVendor, "New Vendor");
+	}
 	public void ClickNewPotential() 
 	{
 		cm.ClickElement(driver, NewPotential, "New Potential");
