@@ -93,38 +93,38 @@ public class HeaderPage {
 	
 	public void ClickNewInvoice() 
 	{
-		cm.ClickElement(driver, showSubMenu, "show SubMenu");
+		cm.MoveToElement(driver,showSubMenu, "show SubMenu");
 		cm.ClickElement(driver, NewInvoice, "New Invoice");
 	}
 	public void ClickNewSalesOrder() 
 	{
-		cm.ClickElement(driver, showSubMenu, "show SubMenu");
+		cm.MoveToElement(driver,showSubMenu, "show SubMenu");
 		cm.ClickElement(driver, NewSalesOrder, "New Sales Order");
 	}
 	public void ClickNewPurchaseOrder() 
 	{
-		cm.ClickElement(driver, showSubMenu, "show SubMenu");
+		cm.MoveToElement(driver,showSubMenu, "show SubMenu");
 		cm.ClickElement(driver, NewPurchaseOrder, "New Purchase Order");
 	}
 	public void ClickNewQuote() 
 	{
-		cm.ClickElement(driver, showSubMenu, "show SubMenu");
+		cm.MoveToElement(driver,showSubMenu, "show SubMenu");
 		cm.ClickElement(driver, NewQuote, "New Quote");
 	}
 	public void ClickNewPriceBook() 
 	{
-		cm.ClickElement(driver, showSubMenu, "show SubMenu");
+		cm.MoveToElement(driver,showSubMenu, "show SubMenu");
 		cm.ClickElement(driver, NewPriceBook, "New Price Book");
 	}
 	public void ClickNewTask() 
 	{
-		cm.ClickElement(driver, showSubMenu, "show SubMenu");
+		cm.MoveToElement(driver,showSubMenu, "show SubMenu");
 		cm.ClickElement(driver, NewTask, "New Task");
 	}
 	public void ClickNewVendor() 
 	{
-		cm.ClickElement(driver, showSubMenu, "show SubMenu");
-		cm.ClickElement(driver, NewVendor, "New Vendor");
+		cm.MoveToElement(driver,showSubMenu, "show SubMenu");
+		cm.ClickElement(driver,NewVendor,"New Vendor");
 	}
 	public void ClickNewPotential() 
 	{
