@@ -60,6 +60,7 @@ public class ProductsPage extends HeaderPage{
 		cm.AlertHandler(driver);
 		driver.switchTo().alert().accept();	
 	}
+	
 	public boolean IssubMenuProductsDisplay()
 	{
 		return cm.IsElementPresent(driver, Products, "Products");
