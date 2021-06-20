@@ -41,9 +41,6 @@ public class ActivitiesPage extends HeaderPage{
 	@FindBy(xpath="(//input[@name='button'])[1]")
 	WebElement changebtn;
 	
-	@FindBy(name="Duplicate")
-	WebElement Duplicate;
-	
 	@FindBy(name="Edit")
 	WebElement Edit;
 	
@@ -116,7 +113,7 @@ public class ActivitiesPage extends HeaderPage{
 	public void DuplicateActivity()
 	{
 		cm.ClickElement(driver, ClientMeeting,"'Client Meeting'");
-		cm.ClickElement(driver, Duplicate,"Duplicate Button");
+		ClickDuplicate();
 		cm.ClickElement(driver, btn,"Save Button");	
 	}
 	
