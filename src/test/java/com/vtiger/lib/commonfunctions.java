@@ -225,7 +225,7 @@ public class commonfunctions {
 			driver.switchTo().window(fwindow);
 			BaseTests.logger.pass(fieldname+ " has been Selected");
 		}
-		//Enter value in text box on popup window
+		//Enter value in text box on popup window	
 		public void ActionOnPopUpWindowsEnterValue(WebDriver driver, WebElement elm1,WebElement elm2,String val,String fieldname)
 		{
 			w = new WebDriverWait(driver,30);
@@ -243,11 +243,10 @@ public class commonfunctions {
 			elm1.clear();
 			elm1.sendKeys(val);
 			elm2.click();
+			driver.close();
 			driver.switchTo().window(fwindow);
 			BaseTests.logger.pass(fieldname+ " has been Entered and submitted");
-		}
-			
-			
+		}	
 }
 		
 	
