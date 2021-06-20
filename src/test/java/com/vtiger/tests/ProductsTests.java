@@ -9,7 +9,23 @@ public class ProductsTests extends BaseTests{
 	
 	public ProductsPage pp;
 	
-	@Test
+	@Test (priority=3)
+	public void verifyCreateNewPriceBook_TC04()
+	{
+		logger = extent.createTest("Verify Create New Price Book_TC04");
+		pp = new ProductsPage(driver);
+		pp.CreateNewPriceBook("Internet Sales","New Internet sales price book added");
+		extent.flush();
+	}
+	//@Test (priority=2)
+	public void verifyCreateNewVendor_TC03()
+	{
+		logger = extent.createTest("Verify Create New Vendor_TC03");
+		pp = new ProductsPage(driver);
+		pp.CreateNewVendor("Mark","(095)859-7757","mark@company.com","www.vtigercrm.com","306-Internet Sales","999 Baker Way","San Jose","CA","77899","USA");
+		extent.flush();
+	}
+	//@Test (priority=1)
 	public void verifyCreateNewProduct_TC01()
 	{
 		logger = extent.createTest("Verify Create New Product_TC01");
@@ -17,7 +33,7 @@ public class ProductsTests extends BaseTests{
 		pp.CreateNewProduct("Vtiger 15 Users Pack", "004", "0.000",2);
 		extent.flush();
 	}
-	@Test
+	//@Test (priority=0)
 	public void verifySubMenusOnProductsPage_TC02()
 	{
 		logger = extent.createTest("verify New Event_TC02");
