@@ -25,7 +25,9 @@ public class HeaderPage {
 	@FindBy(xpath="(//input[@name='button'])[3]")
 	WebElement savebutton;	
 	@FindBy(xpath=("(//input[@type='submit'])[3]"))
-	WebElement deletebutton;	
+	WebElement deletebutton;
+	@FindBy(xpath="(//input[@name='button'])[2]")
+	WebElement cancelbutton;
 	@FindBy(linkText="Accounts")
 	WebElement Accounts;	
 	@FindBy(linkText="Products")
@@ -222,6 +224,10 @@ public class HeaderPage {
 	{
 		cm.ClickElement(driver, deletebutton, "Delete button");
 	}
+	public void ClickCancelbutton()
+	{
+		cm.ClickElement(driver,cancelbutton,"Cancel button");
+	}
 	public void ClickSaveButton() 
 	{
 		cm.ClickElement(driver, savebutton, "Save button");
@@ -238,5 +244,4 @@ public class HeaderPage {
 	{
 		cm.ClickElement(driver, Edit, "Edit button");
 	}
-
 }
