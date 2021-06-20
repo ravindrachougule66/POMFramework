@@ -45,7 +45,16 @@ public class PotentialsPage extends HeaderPage{
 		@FindBy(linkText="vtiger")
 		WebElement vtiger;
 		
-		public void CreateNewPotential(String pname,String amt,String cdate,String otype,String nstep,String lsource,String sstage)
+		@FindBy(name="probability")
+		WebElement probability;
+		
+		@FindBy(linkText="CRM vtiger - 1500 units")
+		WebElement 	CRMvtiger;
+		
+		@FindBy(linkText="EDFG Group Limited")
+		WebElement EDFGGroup;
+
+		public void CreateNewPotential(String pname,String amt,String cdate,String otype,String nstep,String lsource,String sstage,String prob)
 		{
 			ClickNewPotential();
 			cm.EnterValue(driver,potentialname,pname,"Potential name");
@@ -57,7 +66,32 @@ public class PotentialsPage extends HeaderPage{
 			cm.EnterValue(driver, nextstep, nstep, "Next step");
 			cm.SelectByValue(driver, leadsource, lsource, "Lead source");
 			cm.SelectByValue(driver, sales_stage, sstage, "Sales stage");
+			cm.EnterValue(driver, probability,prob,"Probability (%)");
 			ClickSaveButton();
+		}
+		
+		public void EditPotential()
+		{
+			ClickPotentials();
+			cm.ClickElement(driver,CRMvtiger, "CRM vtiger - 1500 units Potential");
+			ClickEditButton();
+			cm.ClickElement(driver,btn1,"Change button");
+			cm.ActionOnPopUpWindows(driver, EDFGGroup, "EDFG Group Limited");
+			ClickSaveButton();
+		}
+		
+		public void DuplicatePotential()
+		{
+			ClickDuplicateButton();
+			ClickSaveButton();		
+		}
+		
+		public void DeletePotential()
+		{
+			ClickDeleteButton();
+			cm.AlertHandlerDismiss(driver);
+			ClickDeleteButton();
+			cm.AlertHandler(driver);
 		}
 
 }
