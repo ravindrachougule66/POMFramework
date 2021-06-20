@@ -96,6 +96,13 @@ public class HeaderPage {
 	@FindBy(linkText="New Potential")
 	WebElement NewPotential;
 	
+	@FindBy(name="Duplicate")
+	WebElement Duplicate;
+	
+	public void ClickDuplicate()
+	{
+		cm.ClickElement(driver, Duplicate, "Duplicate button");
+	}
 	public void ClickNewPotential() 
 	{
 		cm.ClickElement(driver, NewPotential, "New Potential");
