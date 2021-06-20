@@ -113,7 +113,7 @@ public class ActivitiesPage extends HeaderPage{
 	public void DuplicateActivity()
 	{
 		cm.ClickElement(driver, ClientMeeting,"'Client Meeting'");
-		ClickDuplicate();
+		ClickDuplicateButton();
 		cm.ClickElement(driver, btn,"Save Button");	
 	}
 	
