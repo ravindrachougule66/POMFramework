@@ -36,8 +36,6 @@ public class ProductsPage extends HeaderPage{
 	WebElement manufacturer;
 	@FindBy(name="commissionrate")
 	WebElement commissionrate;
-	@FindBy(xpath="(//input[@name='button'])[4]")
-	WebElement save;
 	@FindBy(name="vendorname")
 	WebElement vendorname;
 	@FindBy(name="phone")
@@ -64,6 +62,8 @@ public class ProductsPage extends HeaderPage{
 	WebElement description;
 	@FindBy(name="active")
 	WebElement active;
+	@FindBy(xpath="(//input[@name='button'])[4]")
+	WebElement savebtn;
 	
 	public void CreateNewPriceBook(String bname,String des)
 	{
@@ -88,17 +88,18 @@ public class ProductsPage extends HeaderPage{
 		cm.EnterValue(driver,country,count,"Country");
 		ClickSaveButton();
 	}
-	public void CreateNewProduct(String pname, String Pcode,String crate, int manufact)
+	public void CreateNewProduct(String pname,String Pcode,String manufact,String crate)
 	{
 		ClickNewProduct();
 		cm.EnterValue(driver, productname, pname, "Product Name");
 		cm.EnterValue(driver, productcode, Pcode, "Product Code");
 		cm.ClickElement(driver, discontinued, "Product Active");
-		cm.SelectByIndex(driver, manufacturer, manufact, "Manufacturer");
+		cm.SelectByValue(driver,manufacturer,manufact,"Manufacturer");
 		cm.EnterValue(driver, commissionrate, crate, "Commission Rate");
-		cm.ClickElement(driver, save, "Save button");
+		cm.ClickElement(driver, savebtn, "Save button");
 		cm.AlertHandler(driver);
-		driver.switchTo().alert().accept();	
+		driver.switchTo().alert().accept();
+		ClickCancelbutton();		
 	}	
 	public boolean IssubMenuProductsDisplay()
 	{
