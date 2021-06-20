@@ -39,6 +39,9 @@ public class RSSPage extends HeaderPage{
 	@FindBy(name="Button")
 	WebElement addbtn;
 	
+	@FindBy(xpath="//input[@type='button']")
+	WebElement cancelbtn;
+	
 	
 	public void RSSHomePage()
 	{
