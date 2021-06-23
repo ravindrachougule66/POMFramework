@@ -7,7 +7,7 @@
         <methods>
           <include name="BeginLoadData"/>
           <include name="readSetting"/>
-          <include name="verifyCreateNewProduct_TC01"/>
+          <include name="verifyCreateNewProduct_TC02"/>
           <include name="CloseBrowser"/>
         </methods>
       </class> <!-- com.vtiger.tests.ProductsTests -->

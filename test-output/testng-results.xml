@@ -1,29 +1,226 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" ignored="21" total="49" passed="27">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="5810" started-at="2021-06-20T04:30:35 IST" finished-at="2021-06-20T04:30:41 IST">
+  <suite name="Suite" duration-ms="148351" started-at="2021-06-21T23:49:54 IST" finished-at="2021-06-21T23:52:22 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="5810" started-at="2021-06-20T04:30:35 IST" finished-at="2021-06-20T04:30:41 IST">
+    <test name="Test" duration-ms="148351" started-at="2021-06-21T23:49:54 IST" finished-at="2021-06-21T23:52:22 IST">
       <class name="com.vtiger.tests.PotentialTests">
-        <test-method status="PASS" signature="BeginLoadData()[pri:0, instance:com.vtiger.tests.PotentialTests@a38d7a3]" name="BeginLoadData" is-config="true" duration-ms="775" started-at="2021-06-20T04:30:24 IST" finished-at="2021-06-20T04:30:24 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeginLoadData -->
-        <test-method status="PASS" signature="readSetting()[pri:0, instance:com.vtiger.tests.PotentialTests@a38d7a3]" name="readSetting" is-config="true" duration-ms="11008" started-at="2021-06-20T04:30:24 IST" finished-at="2021-06-20T04:30:35 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- readSetting -->
-        <test-method status="PASS" signature="verifyCreateNewPotential_TC01()[pri:0, instance:com.vtiger.tests.PotentialTests@a38d7a3]" name="verifyCreateNewPotential_TC01" duration-ms="5765" started-at="2021-06-20T04:30:35 IST" finished-at="2021-06-20T04:30:41 IST">
+        <test-method status="PASS" signature="verifyCreateNewPotential_TC01()[pri:0, instance:com.vtiger.tests.PotentialTests@4a87761d]" name="verifyCreateNewPotential_TC01" duration-ms="7157" started-at="2021-06-21T23:52:00 IST" finished-at="2021-06-21T23:52:08 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCreateNewPotential_TC01 -->
-        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:com.vtiger.tests.PotentialTests@a38d7a3]" name="CloseBrowser" is-config="true" duration-ms="1800" started-at="2021-06-20T04:30:41 IST" finished-at="2021-06-20T04:30:43 IST">
+        <test-method status="PASS" signature="verifyEditPotential_TC02()[pri:1, instance:com.vtiger.tests.PotentialTests@4a87761d]" name="verifyEditPotential_TC02" duration-ms="8930" started-at="2021-06-21T23:52:08 IST" finished-at="2021-06-21T23:52:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEditPotential_TC02 -->
+        <test-method status="PASS" signature="verifyDuplicatePotential_TC03()[pri:2, instance:com.vtiger.tests.PotentialTests@4a87761d]" name="verifyDuplicatePotential_TC03" duration-ms="4318" started-at="2021-06-21T23:52:16 IST" finished-at="2021-06-21T23:52:21 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDuplicatePotential_TC03 -->
+        <test-method status="PASS" signature="verifyDeletePotential_TC04()[pri:3, instance:com.vtiger.tests.PotentialTests@4a87761d]" name="verifyDeletePotential_TC04" duration-ms="1123" started-at="2021-06-21T23:52:21 IST" finished-at="2021-06-21T23:52:22 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeletePotential_TC04 -->
+      </class> <!-- com.vtiger.tests.PotentialTests -->
+      <class name="com.vtiger.tests.ContactsTests">
+        <test-method status="PASS" signature="BeginLoadData()[pri:0, instance:com.vtiger.tests.ContactsTests@4eb7f003]" name="BeginLoadData" is-config="true" duration-ms="1577" started-at="2021-06-21T23:49:37 IST" finished-at="2021-06-21T23:49:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeginLoadData -->
+        <test-method status="PASS" signature="readSetting()[pri:0, instance:com.vtiger.tests.ContactsTests@4eb7f003]" name="readSetting" is-config="true" duration-ms="15072" started-at="2021-06-21T23:49:39 IST" finished-at="2021-06-21T23:49:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- readSetting -->
+        <test-method status="PASS" signature="ContactSearchAndDelete_TC02()[pri:0, instance:com.vtiger.tests.ContactsTests@4eb7f003]" name="ContactSearchAndDelete_TC02" duration-ms="8138" started-at="2021-06-21T23:49:54 IST" finished-at="2021-06-21T23:50:02 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ContactSearchAndDelete_TC02 -->
+        <test-method status="PASS" signature="CreateNewContact_TC01()[pri:0, instance:com.vtiger.tests.ContactsTests@4eb7f003]" name="CreateNewContact_TC01" duration-ms="9608" started-at="2021-06-21T23:50:02 IST" finished-at="2021-06-21T23:50:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateNewContact_TC01 -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:com.vtiger.tests.ContactsTests@4eb7f003]" name="CloseBrowser" is-config="true" duration-ms="8090" started-at="2021-06-21T23:52:22 IST" finished-at="2021-06-21T23:52:30 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-      </class> <!-- com.vtiger.tests.PotentialTests -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.vtiger.tests.ContactsTests -->
+      <class name="com.vtiger.tests.ActivitiesTests">
+        <test-method status="PASS" signature="LoadData()[pri:0, instance:com.vtiger.tests.ActivitiesTests@757942a1]" name="LoadData" is-config="true" duration-ms="142" started-at="2021-06-21T23:51:23 IST" finished-at="2021-06-21T23:51:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoadData -->
+        <test-method status="PASS" signature="verifyNewEvent_TC01()[pri:0, instance:com.vtiger.tests.ActivitiesTests@757942a1]" name="verifyNewEvent_TC01" duration-ms="4528" started-at="2021-06-21T23:51:23 IST" finished-at="2021-06-21T23:51:28 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewEvent_TC01 -->
+        <test-method status="PASS" signature="verifySearchActivities_TC02()[pri:1, instance:com.vtiger.tests.ActivitiesTests@757942a1]" name="verifySearchActivities_TC02" duration-ms="6767" started-at="2021-06-21T23:51:28 IST" finished-at="2021-06-21T23:51:35 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchActivities_TC02 -->
+        <test-method status="PASS" signature="DeleteActivities_TC03()[pri:2, instance:com.vtiger.tests.ActivitiesTests@757942a1]" name="DeleteActivities_TC03" duration-ms="7366" started-at="2021-06-21T23:51:35 IST" finished-at="2021-06-21T23:51:42 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteActivities_TC03 -->
+        <test-method status="PASS" signature="verifyDuplicateOfActivity_TC04()[pri:3, instance:com.vtiger.tests.ActivitiesTests@757942a1]" name="verifyDuplicateOfActivity_TC04" duration-ms="4610" started-at="2021-06-21T23:51:42 IST" finished-at="2021-06-21T23:51:47 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDuplicateOfActivity_TC04 -->
+        <test-method status="PASS" signature="verifyEditActivity_TC05()[pri:4, instance:com.vtiger.tests.ActivitiesTests@757942a1]" name="verifyEditActivity_TC05" duration-ms="13619" started-at="2021-06-21T23:51:47 IST" finished-at="2021-06-21T23:52:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEditActivity_TC05 -->
+      </class> <!-- com.vtiger.tests.ActivitiesTests -->
+      <class name="com.vtiger.tests.RSSTests">
+        <test-method status="PASS" signature="VerifyRSSHomePage_TC01()[pri:0, instance:com.vtiger.tests.RSSTests@69b0fd6f]" name="VerifyRSSHomePage_TC01" duration-ms="1532" started-at="2021-06-21T23:51:18 IST" finished-at="2021-06-21T23:51:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyRSSHomePage_TC01 -->
+        <test-method status="PASS" signature="VerifyRSSLinksPresentOnPage_TC02()[pri:1, instance:com.vtiger.tests.RSSTests@69b0fd6f]" name="VerifyRSSLinksPresentOnPage_TC02" duration-ms="852" started-at="2021-06-21T23:51:20 IST" finished-at="2021-06-21T23:51:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyRSSLinksPresentOnPage_TC02 -->
+        <test-method status="PASS" signature="VerifyAddRSSFeed_TC02()[pri:2, instance:com.vtiger.tests.RSSTests@69b0fd6f]" name="VerifyAddRSSFeed_TC02" duration-ms="2893" started-at="2021-06-21T23:51:20 IST" finished-at="2021-06-21T23:51:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyAddRSSFeed_TC02 -->
+      </class> <!-- com.vtiger.tests.RSSTests -->
+      <class name="com.vtiger.tests.ProductsTests">
+        <test-method status="PASS" signature="verifySubMenusOnProductsPage_TC01()[pri:0, instance:com.vtiger.tests.ProductsTests@6a1aab78]" name="verifySubMenusOnProductsPage_TC01" duration-ms="2734" started-at="2021-06-21T23:50:47 IST" finished-at="2021-06-21T23:50:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySubMenusOnProductsPage_TC01 -->
+        <test-method status="FAIL" signature="verifyCreateNewProduct_TC02()[pri:1, instance:com.vtiger.tests.ProductsTests@6a1aab78]" name="verifyCreateNewProduct_TC02" duration-ms="3089" started-at="2021-06-21T23:50:50 IST" finished-at="2021-06-21T23:50:53 IST">
+          <exception class="org.openqa.selenium.NoAlertPresentException">
+            <message>
+              <![CDATA[no such alert
+  (Session info: chrome=91.0.4472.106)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-RUV174U', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.106, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\Ravindra\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60875}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a685de5dec0a1ec4071e66b86886c28c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=91.0.4472.106)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-RUV174U', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.106, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\Ravindra\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60875}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a685de5dec0a1ec4071e66b86886c28c
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:932)
+at com.vtiger.pages.ProductsPage.CreateNewProduct(ProductsPage.java:101)
+at com.vtiger.tests.ProductsTests.verifyCreateNewProduct_TC02(ProductsTests.java:33)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoAlertPresentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCreateNewProduct_TC02 -->
+        <test-method status="PASS" signature="verifyCreateNewVendor_TC03()[pri:2, instance:com.vtiger.tests.ProductsTests@6a1aab78]" name="verifyCreateNewVendor_TC03" duration-ms="6212" started-at="2021-06-21T23:50:53 IST" finished-at="2021-06-21T23:50:59 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCreateNewVendor_TC03 -->
+        <test-method status="PASS" signature="verifyCreateNewPriceBook_TC04()[pri:3, instance:com.vtiger.tests.ProductsTests@6a1aab78]" name="verifyCreateNewPriceBook_TC04" duration-ms="4161" started-at="2021-06-21T23:50:59 IST" finished-at="2021-06-21T23:51:03 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCreateNewPriceBook_TC04 -->
+      </class> <!-- com.vtiger.tests.ProductsTests -->
+      <class name="com.vtiger.tests.CalenderTest">
+        <test-method status="PASS" signature="LoadData()[pri:0, instance:com.vtiger.tests.CalenderTest@74ad1f1f]" name="LoadData" is-config="true" duration-ms="130" started-at="2021-06-21T23:50:36 IST" finished-at="2021-06-21T23:50:36 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoadData -->
+        <test-method status="PASS" signature="verifyCalendar_TC01()[pri:0, instance:com.vtiger.tests.CalenderTest@74ad1f1f]" name="verifyCalendar_TC01" duration-ms="5725" started-at="2021-06-21T23:50:36 IST" finished-at="2021-06-21T23:50:42 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCalendar_TC01 -->
+        <test-method status="PASS" signature="verifyCreateNewAppointmentfromCalender_TC02()[pri:0, instance:com.vtiger.tests.CalenderTest@74ad1f1f]" name="verifyCreateNewAppointmentfromCalender_TC02" duration-ms="5399" started-at="2021-06-21T23:50:42 IST" finished-at="2021-06-21T23:50:47 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCreateNewAppointmentfromCalender_TC02 -->
+      </class> <!-- com.vtiger.tests.CalenderTest -->
+      <class name="com.vtiger.tests.LeadTests">
+        <test-method status="PASS" signature="LoadData()[pri:0, instance:com.vtiger.tests.LeadTests@1b26f7b2]" name="LoadData" is-config="true" duration-ms="314" started-at="2021-06-21T23:50:11 IST" finished-at="2021-06-21T23:50:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoadData -->
+        <test-method status="PASS" signature="verifyLeadwithmandatoryfields_TC01()[pri:0, instance:com.vtiger.tests.LeadTests@1b26f7b2]" name="verifyLeadwithmandatoryfields_TC01" duration-ms="4281" started-at="2021-06-21T23:50:12 IST" finished-at="2021-06-21T23:50:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLeadwithmandatoryfields_TC01 -->
+        <test-method status="PASS" signature="verifyLeadwithAllFields_TC02()[pri:1, instance:com.vtiger.tests.LeadTests@1b26f7b2]" name="verifyLeadwithAllFields_TC02" duration-ms="6777" started-at="2021-06-21T23:50:16 IST" finished-at="2021-06-21T23:50:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLeadwithAllFields_TC02 -->
+        <test-method status="PASS" signature="verifydeleteLead_TC03()[pri:2, instance:com.vtiger.tests.LeadTests@1b26f7b2]" name="verifydeleteLead_TC03" duration-ms="6297" started-at="2021-06-21T23:50:23 IST" finished-at="2021-06-21T23:50:29 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifydeleteLead_TC03 -->
+        <test-method status="PASS" signature="verifychangeLeadStatus_TC04()[pri:3, instance:com.vtiger.tests.LeadTests@1b26f7b2]" name="verifychangeLeadStatus_TC04" duration-ms="1608" started-at="2021-06-21T23:50:29 IST" finished-at="2021-06-21T23:50:31 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifychangeLeadStatus_TC04 -->
+        <test-method status="PASS" signature="verifysearchLead_TC05()[pri:4, instance:com.vtiger.tests.LeadTests@1b26f7b2]" name="verifysearchLead_TC05" duration-ms="5141" started-at="2021-06-21T23:50:31 IST" finished-at="2021-06-21T23:50:36 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifysearchLead_TC05 -->
+      </class> <!-- com.vtiger.tests.LeadTests -->
+      <class name="com.vtiger.tests.AccountTests">
+        <test-method status="PASS" signature="verifyCreateNewAccountWithMandatoryFields_TC01()[pri:0, instance:com.vtiger.tests.AccountTests@462d5aee]" name="verifyCreateNewAccountWithMandatoryFields_TC01" duration-ms="4205" started-at="2021-06-21T23:51:03 IST" finished-at="2021-06-21T23:51:08 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCreateNewAccountWithMandatoryFields_TC01 -->
+        <test-method status="PASS" signature="verifyCreateNewAccountWithAllFields_TC02()[pri:1, instance:com.vtiger.tests.AccountTests@462d5aee]" name="verifyCreateNewAccountWithAllFields_TC02" duration-ms="6643" started-at="2021-06-21T23:51:08 IST" finished-at="2021-06-21T23:51:14 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCreateNewAccountWithAllFields_TC02 -->
+        <test-method status="PASS" signature="verifyAccountSearch_TC03()[pri:2, instance:com.vtiger.tests.AccountTests@462d5aee]" name="verifyAccountSearch_TC03" duration-ms="3798" started-at="2021-06-21T23:51:14 IST" finished-at="2021-06-21T23:51:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAccountSearch_TC03 -->
+      </class> <!-- com.vtiger.tests.AccountTests -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

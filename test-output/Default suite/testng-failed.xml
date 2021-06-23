@@ -3,14 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.vtiger.tests.RSSTests">
+      <class name="com.vtiger.tests.ProductsTests">
         <methods>
           <include name="BeginLoadData"/>
           <include name="readSetting"/>
-          <include name="VerifyAddRSSFeed_TC02"/>
+          <include name="verifyCreateNewProduct_TC02"/>
           <include name="CloseBrowser"/>
         </methods>
-      </class> <!-- com.vtiger.tests.RSSTests -->
+      </class> <!-- com.vtiger.tests.ProductsTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

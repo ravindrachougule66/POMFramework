@@ -4,7 +4,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import com.vtiger.pages.CalenderPage;
 
-public class CalenderTest extends BaseTests{
+public class CalenderTest extends BaseTest{
 	
 	@BeforeClass
 	public void LoadData()

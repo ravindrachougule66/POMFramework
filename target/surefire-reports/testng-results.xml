@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="com.vtiger.tests.CalenderTest" duration-ms="12898" started-at="2021-06-21T23:38:32 IST" finished-at="2021-06-21T23:38:45 IST">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="12898" started-at="2021-06-21T23:38:32 IST" finished-at="2021-06-21T23:38:45 IST">
+      <class name="com.vtiger.tests.CalenderTest">
+        <test-method status="PASS" signature="BeginLoadData()[pri:0, instance:com.vtiger.tests.CalenderTest@5ae63ade]" name="BeginLoadData" is-config="true" duration-ms="1434" started-at="2021-06-21T23:38:13 IST" finished-at="2021-06-21T23:38:14 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeginLoadData -->
+        <test-method status="PASS" signature="readSetting()[pri:0, instance:com.vtiger.tests.CalenderTest@5ae63ade]" name="readSetting" is-config="true" duration-ms="17726" started-at="2021-06-21T23:38:14 IST" finished-at="2021-06-21T23:38:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- readSetting -->
+        <test-method status="PASS" signature="LoadData()[pri:0, instance:com.vtiger.tests.CalenderTest@5ae63ade]" name="LoadData" is-config="true" duration-ms="232" started-at="2021-06-21T23:38:32 IST" finished-at="2021-06-21T23:38:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoadData -->
+        <test-method status="PASS" signature="verifyCalendar_TC01()[pri:0, instance:com.vtiger.tests.CalenderTest@5ae63ade]" name="verifyCalendar_TC01" duration-ms="6888" started-at="2021-06-21T23:38:32 IST" finished-at="2021-06-21T23:38:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCalendar_TC01 -->
+        <test-method status="PASS" signature="verifyCreateNewAppointmentfromCalender_TC02()[pri:0, instance:com.vtiger.tests.CalenderTest@5ae63ade]" name="verifyCreateNewAppointmentfromCalender_TC02" duration-ms="5710" started-at="2021-06-21T23:38:39 IST" finished-at="2021-06-21T23:38:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCreateNewAppointmentfromCalender_TC02 -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:com.vtiger.tests.CalenderTest@5ae63ade]" name="CloseBrowser" is-config="true" duration-ms="2353" started-at="2021-06-21T23:38:45 IST" finished-at="2021-06-21T23:38:47 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- com.vtiger.tests.CalenderTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- com.vtiger.tests.CalenderTest -->
+</testng-results>

@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,8 +39,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,37 +50,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Ravindra\AppData\Local\Temp\testng-eclipse--850259449\testng-customsuite.xml</span>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>C:\Selenium\RavindraGithubProjects\POMFramework\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -93,21 +93,165 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">28 methods, 1 failed,   27 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.vtiger.tests.ProductsTests" hash-for-method="verifyCreateNewProduct_TC02">verifyCreateNewProduct_TC02</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.vtiger.tests.PotentialTests" hash-for-method="verifyCreateNewPotential_TC01">verifyCreateNewPotential_TC01</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.vtiger.tests.ContactsTests" hash-for-method="ContactSearchAndDelete_TC02">ContactSearchAndDelete_TC02</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.vtiger.tests.ContactsTests" hash-for-method="CreateNewContact_TC01">CreateNewContact_TC01</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.vtiger.tests.ActivitiesTests" hash-for-method="DeleteActivities_TC03">DeleteActivities_TC03</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.vtiger.tests.RSSTests" hash-for-method="VerifyAddRSSFeed_TC02">VerifyAddRSSFeed_TC02</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.vtiger.tests.RSSTests" hash-for-method="VerifyRSSHomePage_TC01">VerifyRSSHomePage_TC01</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.vtiger.tests.RSSTests" hash-for-method="VerifyRSSLinksPresentOnPage_TC02">VerifyRSSLinksPresentOnPage_TC02</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.vtiger.tests.AccountTests" hash-for-method="verifyAccountSearch_TC03">verifyAccountSearch_TC03</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.vtiger.tests.CalenderTest" hash-for-method="verifyCalendar_TC01">verifyCalendar_TC01</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.vtiger.tests.AccountTests" hash-for-method="verifyCreateNewAccountWithAllFields_TC02">verifyCreateNewAccountWithAllFields_TC02</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.vtiger.tests.AccountTests" hash-for-method="verifyCreateNewAccountWithMandatoryFields_TC01">verifyCreateNewAccountWithMandatoryFields_TC01</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.vtiger.tests.CalenderTest" hash-for-method="verifyCreateNewAppointmentfromCalender_TC02">verifyCreateNewAppointmentfromCalender_TC02</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.vtiger.tests.PotentialTests" hash-for-method="verifyCreateNewPotential_TC01">verifyCreateNewPotential_TC01</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.vtiger.tests.ProductsTests" hash-for-method="verifyCreateNewPriceBook_TC04">verifyCreateNewPriceBook_TC04</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.vtiger.tests.ProductsTests" hash-for-method="verifyCreateNewVendor_TC03">verifyCreateNewVendor_TC03</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.vtiger.tests.PotentialTests" hash-for-method="verifyDeletePotential_TC04">verifyDeletePotential_TC04</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.vtiger.tests.ActivitiesTests" hash-for-method="verifyDuplicateOfActivity_TC04">verifyDuplicateOfActivity_TC04</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.vtiger.tests.PotentialTests" hash-for-method="verifyDuplicatePotential_TC03">verifyDuplicatePotential_TC03</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.vtiger.tests.ActivitiesTests" hash-for-method="verifyEditActivity_TC05">verifyEditActivity_TC05</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.vtiger.tests.PotentialTests" hash-for-method="verifyEditPotential_TC02">verifyEditPotential_TC02</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.vtiger.tests.LeadTests" hash-for-method="verifyLeadwithAllFields_TC02">verifyLeadwithAllFields_TC02</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.vtiger.tests.LeadTests" hash-for-method="verifyLeadwithmandatoryfields_TC01">verifyLeadwithmandatoryfields_TC01</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.vtiger.tests.ActivitiesTests" hash-for-method="verifyNewEvent_TC01">verifyNewEvent_TC01</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.vtiger.tests.ActivitiesTests" hash-for-method="verifySearchActivities_TC02">verifySearchActivities_TC02</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.vtiger.tests.ProductsTests" hash-for-method="verifySubMenusOnProductsPage_TC01">verifySubMenusOnProductsPage_TC01</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.vtiger.tests.LeadTests" hash-for-method="verifychangeLeadStatus_TC04">verifychangeLeadStatus_TC04</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.vtiger.tests.LeadTests" hash-for-method="verifydeleteLead_TC03">verifydeleteLead_TC03</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.vtiger.tests.LeadTests" hash-for-method="verifysearchLead_TC05">verifysearchLead_TC05</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -118,8 +262,260 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.vtiger.tests.ProductsTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCreateNewProduct_TC02">
+                  </a> <!-- verifyCreateNewProduct_TC02 -->
+                  <span class="method-name">verifyCreateNewProduct_TC02</span>
+                  <div class="stack-trace">org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=91.0.4472.106)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-RUV174U&apos;, ip: &apos;192.168.0.107&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_281&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.106, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\Ravindra\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60875}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a685de5dec0a1ec4071e66b86886c28c
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:932)
+	at com.vtiger.pages.ProductsPage.CreateNewProduct(ProductsPage.java:101)
+	at com.vtiger.tests.ProductsTests.verifyCreateNewProduct_TC02(ProductsTests.java:33)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.vtiger.tests.ProductsTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCreateNewPriceBook_TC04">
+                  </a> <!-- verifyCreateNewPriceBook_TC04 -->
+                  <span class="method-name">verifyCreateNewPriceBook_TC04</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCreateNewVendor_TC03">
+                  </a> <!-- verifyCreateNewVendor_TC03 -->
+                  <span class="method-name">verifyCreateNewVendor_TC03</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySubMenusOnProductsPage_TC01">
+                  </a> <!-- verifySubMenusOnProductsPage_TC01 -->
+                  <span class="method-name">verifySubMenusOnProductsPage_TC01</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.vtiger.tests.ContactsTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ContactSearchAndDelete_TC02">
+                  </a> <!-- ContactSearchAndDelete_TC02 -->
+                  <span class="method-name">ContactSearchAndDelete_TC02</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CreateNewContact_TC01">
+                  </a> <!-- CreateNewContact_TC01 -->
+                  <span class="method-name">CreateNewContact_TC01</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.vtiger.tests.RSSTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyAddRSSFeed_TC02">
+                  </a> <!-- VerifyAddRSSFeed_TC02 -->
+                  <span class="method-name">VerifyAddRSSFeed_TC02</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyRSSHomePage_TC01">
+                  </a> <!-- VerifyRSSHomePage_TC01 -->
+                  <span class="method-name">VerifyRSSHomePage_TC01</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyRSSLinksPresentOnPage_TC02">
+                  </a> <!-- VerifyRSSLinksPresentOnPage_TC02 -->
+                  <span class="method-name">VerifyRSSLinksPresentOnPage_TC02</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.vtiger.tests.AccountTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAccountSearch_TC03">
+                  </a> <!-- verifyAccountSearch_TC03 -->
+                  <span class="method-name">verifyAccountSearch_TC03</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCreateNewAccountWithAllFields_TC02">
+                  </a> <!-- verifyCreateNewAccountWithAllFields_TC02 -->
+                  <span class="method-name">verifyCreateNewAccountWithAllFields_TC02</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCreateNewAccountWithMandatoryFields_TC01">
+                  </a> <!-- verifyCreateNewAccountWithMandatoryFields_TC01 -->
+                  <span class="method-name">verifyCreateNewAccountWithMandatoryFields_TC01</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.vtiger.tests.ActivitiesTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DeleteActivities_TC03">
+                  </a> <!-- DeleteActivities_TC03 -->
+                  <span class="method-name">DeleteActivities_TC03</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDuplicateOfActivity_TC04">
+                  </a> <!-- verifyDuplicateOfActivity_TC04 -->
+                  <span class="method-name">verifyDuplicateOfActivity_TC04</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyEditActivity_TC05">
+                  </a> <!-- verifyEditActivity_TC05 -->
+                  <span class="method-name">verifyEditActivity_TC05</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNewEvent_TC01">
+                  </a> <!-- verifyNewEvent_TC01 -->
+                  <span class="method-name">verifyNewEvent_TC01</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchActivities_TC02">
+                  </a> <!-- verifySearchActivities_TC02 -->
+                  <span class="method-name">verifySearchActivities_TC02</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.vtiger.tests.CalenderTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCalendar_TC01">
+                  </a> <!-- verifyCalendar_TC01 -->
+                  <span class="method-name">verifyCalendar_TC01</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCreateNewAppointmentfromCalender_TC02">
+                  </a> <!-- verifyCreateNewAppointmentfromCalender_TC02 -->
+                  <span class="method-name">verifyCreateNewAppointmentfromCalender_TC02</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.vtiger.tests.LeadTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLeadwithAllFields_TC02">
+                  </a> <!-- verifyLeadwithAllFields_TC02 -->
+                  <span class="method-name">verifyLeadwithAllFields_TC02</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLeadwithmandatoryfields_TC01">
+                  </a> <!-- verifyLeadwithmandatoryfields_TC01 -->
+                  <span class="method-name">verifyLeadwithmandatoryfields_TC01</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifychangeLeadStatus_TC04">
+                  </a> <!-- verifychangeLeadStatus_TC04 -->
+                  <span class="method-name">verifychangeLeadStatus_TC04</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifydeleteLead_TC03">
+                  </a> <!-- verifydeleteLead_TC03 -->
+                  <span class="method-name">verifydeleteLead_TC03</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifysearchLead_TC05">
+                  </a> <!-- verifysearchLead_TC05 -->
+                  <span class="method-name">verifysearchLead_TC05</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">com.vtiger.tests.PotentialTests</span>
@@ -132,111 +528,470 @@
                   <span class="method-name">verifyCreateNewPotential_TC01</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDeletePotential_TC04">
+                  </a> <!-- verifyDeletePotential_TC04 -->
+                  <span class="method-name">verifyDeletePotential_TC04</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDuplicatePotential_TC03">
+                  </a> <!-- verifyDuplicatePotential_TC03 -->
+                  <span class="method-name">verifyDuplicatePotential_TC03</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyEditPotential_TC02">
+                  </a> <!-- verifyEditPotential_TC02 -->
+                  <span class="method-name">verifyEditPotential_TC02</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Ravindra\AppData\Local\Temp\testng-eclipse--850259449\testng-customsuite.xml</span>
+            <span class="header-content">C:\Selenium\RavindraGithubProjects\POMFramework\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;com.vtiger.tests.ContactsTests&quot;/&gt;
+      &lt;class name=&quot;com.vtiger.tests.LeadTests&quot;/&gt;
+      &lt;class name=&quot;com.vtiger.tests.CalenderTest&quot;/&gt;
+      &lt;class name=&quot;com.vtiger.tests.ProductsTests&quot;/&gt;
+      &lt;class name=&quot;com.vtiger.tests.AccountTests&quot;/&gt;
+      &lt;class name=&quot;com.vtiger.tests.RSSTests&quot;/&gt;
+      &lt;class name=&quot;com.vtiger.tests.ActivitiesTests&quot;/&gt;
       &lt;class name=&quot;com.vtiger.tests.PotentialTests&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">Test (8 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(28);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyCreateNewPotential_TC01')
-data.setCell(0, 2, 'com.vtiger.tests.PotentialTests')
-data.setCell(0, 3, 5765);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(0, 1, 'verifyEditActivity_TC05')
+data.setCell(0, 2, 'com.vtiger.tests.ActivitiesTests')
+data.setCell(0, 3, 13619);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'CreateNewContact_TC01')
+data.setCell(1, 2, 'com.vtiger.tests.ContactsTests')
+data.setCell(1, 3, 9608);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyEditPotential_TC02')
+data.setCell(2, 2, 'com.vtiger.tests.PotentialTests')
+data.setCell(2, 3, 8930);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'ContactSearchAndDelete_TC02')
+data.setCell(3, 2, 'com.vtiger.tests.ContactsTests')
+data.setCell(3, 3, 8138);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'DeleteActivities_TC03')
+data.setCell(4, 2, 'com.vtiger.tests.ActivitiesTests')
+data.setCell(4, 3, 7366);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyCreateNewPotential_TC01')
+data.setCell(5, 2, 'com.vtiger.tests.PotentialTests')
+data.setCell(5, 3, 7157);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyLeadwithAllFields_TC02')
+data.setCell(6, 2, 'com.vtiger.tests.LeadTests')
+data.setCell(6, 3, 6777);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifySearchActivities_TC02')
+data.setCell(7, 2, 'com.vtiger.tests.ActivitiesTests')
+data.setCell(7, 3, 6767);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyCreateNewAccountWithAllFields_TC02')
+data.setCell(8, 2, 'com.vtiger.tests.AccountTests')
+data.setCell(8, 3, 6643);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifydeleteLead_TC03')
+data.setCell(9, 2, 'com.vtiger.tests.LeadTests')
+data.setCell(9, 3, 6297);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyCreateNewVendor_TC03')
+data.setCell(10, 2, 'com.vtiger.tests.ProductsTests')
+data.setCell(10, 3, 6212);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifyCalendar_TC01')
+data.setCell(11, 2, 'com.vtiger.tests.CalenderTest')
+data.setCell(11, 3, 5725);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'verifyCreateNewAppointmentfromCalender_TC02')
+data.setCell(12, 2, 'com.vtiger.tests.CalenderTest')
+data.setCell(12, 3, 5399);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'verifysearchLead_TC05')
+data.setCell(13, 2, 'com.vtiger.tests.LeadTests')
+data.setCell(13, 3, 5141);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'verifyDuplicateOfActivity_TC04')
+data.setCell(14, 2, 'com.vtiger.tests.ActivitiesTests')
+data.setCell(14, 3, 4610);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'verifyNewEvent_TC01')
+data.setCell(15, 2, 'com.vtiger.tests.ActivitiesTests')
+data.setCell(15, 3, 4528);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'verifyDuplicatePotential_TC03')
+data.setCell(16, 2, 'com.vtiger.tests.PotentialTests')
+data.setCell(16, 3, 4318);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'verifyLeadwithmandatoryfields_TC01')
+data.setCell(17, 2, 'com.vtiger.tests.LeadTests')
+data.setCell(17, 3, 4281);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'verifyCreateNewAccountWithMandatoryFields_TC01')
+data.setCell(18, 2, 'com.vtiger.tests.AccountTests')
+data.setCell(18, 3, 4205);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'verifyCreateNewPriceBook_TC04')
+data.setCell(19, 2, 'com.vtiger.tests.ProductsTests')
+data.setCell(19, 3, 4161);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'verifyAccountSearch_TC03')
+data.setCell(20, 2, 'com.vtiger.tests.AccountTests')
+data.setCell(20, 3, 3798);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'verifyCreateNewProduct_TC02')
+data.setCell(21, 2, 'com.vtiger.tests.ProductsTests')
+data.setCell(21, 3, 3089);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'VerifyAddRSSFeed_TC02')
+data.setCell(22, 2, 'com.vtiger.tests.RSSTests')
+data.setCell(22, 3, 2893);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'verifySubMenusOnProductsPage_TC01')
+data.setCell(23, 2, 'com.vtiger.tests.ProductsTests')
+data.setCell(23, 3, 2734);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'verifychangeLeadStatus_TC04')
+data.setCell(24, 2, 'com.vtiger.tests.LeadTests')
+data.setCell(24, 3, 1608);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'VerifyRSSHomePage_TC01')
+data.setCell(25, 2, 'com.vtiger.tests.RSSTests')
+data.setCell(25, 3, 1532);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'verifyDeletePotential_TC04')
+data.setCell(26, 2, 'com.vtiger.tests.PotentialTests')
+data.setCell(26, 3, 1123);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'VerifyRSSLinksPresentOnPage_TC02')
+data.setCell(27, 2, 'com.vtiger.tests.RSSTests')
+data.setCell(27, 3, 852);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 seconds</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">21 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.vtiger.tests.ProductsTests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">readSetting</span>
+                <br/>
+                <span class="ignored-method-name">BeginLoadData</span>
+                <br/>
+                <span class="ignored-method-name">CloseBrowser</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.vtiger.tests.RSSTests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">readSetting</span>
+                <br/>
+                <span class="ignored-method-name">BeginLoadData</span>
+                <br/>
+                <span class="ignored-method-name">CloseBrowser</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.vtiger.tests.AccountTests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">readSetting</span>
+                <br/>
+                <span class="ignored-method-name">BeginLoadData</span>
+                <br/>
+                <span class="ignored-method-name">CloseBrowser</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.vtiger.tests.ActivitiesTests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">readSetting</span>
+                <br/>
+                <span class="ignored-method-name">BeginLoadData</span>
+                <br/>
+                <span class="ignored-method-name">CloseBrowser</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.vtiger.tests.CalenderTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">readSetting</span>
+                <br/>
+                <span class="ignored-method-name">BeginLoadData</span>
+                <br/>
+                <span class="ignored-method-name">CloseBrowser</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.vtiger.tests.LeadTests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">readSetting</span>
+                <br/>
+                <span class="ignored-method-name">BeginLoadData</span>
+                <br/>
+                <span class="ignored-method-name">CloseBrowser</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.vtiger.tests.PotentialTests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">readSetting</span>
+                <br/>
+                <span class="ignored-method-name">BeginLoadData</span>
+                <br/>
+                <span class="ignored-method-name">CloseBrowser</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.vtiger.tests.PotentialTests</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.vtiger.tests.ContactsTests</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">BeginLoadData</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-suite before">
                 <span class="method-name">readSetting</span>
-                <span class="method-start">776 ms</span>
+                <span class="method-start">1579 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
-                <span class="method-name">verifyCreateNewPotential_TC01</span>
-                <span class="method-start">11822 ms</span>
+                <span class="method-name">ContactSearchAndDelete_TC02</span>
+                <span class="method-start">16781 ms</span>
               </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">CreateNewContact_TC01</span>
+                <span class="method-start">24929 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.vtiger.tests.LeadTests</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">LoadData</span>
+                <span class="method-start">34551 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">verifyLeadwithmandatoryfields_TC01</span>
+                <span class="method-start">34865 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyLeadwithAllFields_TC02</span>
+                <span class="method-start">39149 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifydeleteLead_TC03</span>
+                <span class="method-start">45938 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifychangeLeadStatus_TC04</span>
+                <span class="method-start">52238 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifysearchLead_TC05</span>
+                <span class="method-start">53848 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.vtiger.tests.CalenderTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">LoadData</span>
+                <span class="method-start">58991 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">verifyCalendar_TC01</span>
+                <span class="method-start">59121 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyCreateNewAppointmentfromCalender_TC02</span>
+                <span class="method-start">64848 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.vtiger.tests.ProductsTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifySubMenusOnProductsPage_TC01</span>
+                <span class="method-start">70260 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyCreateNewProduct_TC02</span>
+                <span class="method-start">72996 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyCreateNewVendor_TC03</span>
+                <span class="method-start">76090 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyCreateNewPriceBook_TC04</span>
+                <span class="method-start">82305 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.vtiger.tests.AccountTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyCreateNewAccountWithMandatoryFields_TC01</span>
+                <span class="method-start">86468 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyCreateNewAccountWithAllFields_TC02</span>
+                <span class="method-start">90676 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyAccountSearch_TC03</span>
+                <span class="method-start">97322 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.vtiger.tests.RSSTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">VerifyRSSHomePage_TC01</span>
+                <span class="method-start">101121 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">VerifyRSSLinksPresentOnPage_TC02</span>
+                <span class="method-start">102657 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">VerifyAddRSSFeed_TC02</span>
+                <span class="method-start">103512 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.vtiger.tests.ActivitiesTests</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">LoadData</span>
+                <span class="method-start">106408 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">verifyNewEvent_TC01</span>
+                <span class="method-start">106550 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySearchActivities_TC02</span>
+                <span class="method-start">111079 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">DeleteActivities_TC03</span>
+                <span class="method-start">117847 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyDuplicateOfActivity_TC04</span>
+                <span class="method-start">125215 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyEditActivity_TC05</span>
+                <span class="method-start">129826 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.vtiger.tests.PotentialTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyCreateNewPotential_TC01</span>
+                <span class="method-start">143447 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyEditPotential_TC02</span>
+                <span class="method-start">150605 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyDuplicatePotential_TC03</span>
+                <span class="method-start">159536 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyDeletePotential_TC04</span>
+                <span class="method-start">163862 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.vtiger.tests.ContactsTests</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">CloseBrowser</span>
-                <span class="method-start">17623 ms</span>
+                <span class="method-start">165339 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

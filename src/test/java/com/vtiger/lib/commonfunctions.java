@@ -14,7 +14,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import com.vtiger.tests.BaseTests;
+import com.vtiger.tests.BaseTest;
 
 
 
@@ -30,12 +30,12 @@ public class commonfunctions {
 		w.until(ExpectedConditions.visibilityOf(elm));
 		elm.clear();
 		elm.sendKeys(val);
-		BaseTests.logger.pass(val+ " has been entered in "+fieldname+" field");
+		BaseTest.logger.pass(val+ " has been entered in "+fieldname+" field");
 		}
 		catch(Exception e)
 		{
-			BaseTests.logger.fail(val+ " has not been entered in "+fieldname+" field");
-			BaseTests.logger.info("Screenshot captured: <a href="+getScreenshot(driver,"file")+">Screenshot</a>");
+			BaseTest.logger.fail(val+ " has not been entered in "+fieldname+" field");
+			BaseTest.logger.info("Screenshot captured: <a href="+getScreenshot(driver,"file")+">Screenshot</a>");
 			System.out.println(e.getMessage());
 		}
 	}
@@ -48,12 +48,12 @@ public class commonfunctions {
 		w.until(ExpectedConditions.visibilityOf(elm));
 		Select sel = new Select(elm);
 		sel.selectByIndex(val);
-		BaseTests.logger.pass("Option "+val+ " has been selected from "+fieldname);
+		BaseTest.logger.pass("Option "+val+ " has been selected from "+fieldname);
 		}
 		catch(Exception e)
 		{
-			BaseTests.logger.fail("Option "+val+ " has not been selected from "+fieldname);
-			BaseTests.logger.info("Screenshot captured: <a href="+getScreenshot(driver,"file")+">Screenshot</a>");
+			BaseTest.logger.fail("Option "+val+ " has not been selected from "+fieldname);
+			BaseTest.logger.info("Screenshot captured: <a href="+getScreenshot(driver,"file")+">Screenshot</a>");
 			System.out.println(e.getMessage());
 		}
 	}
@@ -66,12 +66,12 @@ public class commonfunctions {
 		w.until(ExpectedConditions.visibilityOf(elm));
 		Select sel = new Select(elm);
 		sel.selectByValue(val);
-		BaseTests.logger.pass(val+ " has been selected from "+fieldname);
+		BaseTest.logger.pass(val+ " has been selected from "+fieldname);
 		}
 		catch(Exception e)
 		{
-			BaseTests.logger.fail(val+ " has not been selected from "+fieldname);
-			BaseTests.logger.info("Screenshot captured: <a href="+getScreenshot(driver,"file")+">Screenshot</a>");
+			BaseTest.logger.fail(val+ " has not been selected from "+fieldname);
+			BaseTest.logger.info("Screenshot captured: <a href="+getScreenshot(driver,"file")+">Screenshot</a>");
 			System.out.println(e.getMessage());
 		}
 	}
@@ -84,12 +84,12 @@ public class commonfunctions {
 		w.until(ExpectedConditions.visibilityOf(elm));
 		Select sel = new Select(elm);
 		sel.selectByVisibleText(val);
-		BaseTests.logger.pass(val+ " has been selected from "+fieldname);
+		BaseTest.logger.pass(val+ " has been selected from "+fieldname);
 		}
 		catch(Exception e)
 		{
-			BaseTests.logger.fail(val+ " has not been selected from "+fieldname);
-			BaseTests.logger.info("Screenshot captured: <a href="+getScreenshot(driver,"file")+">Screenshot</a>");
+			BaseTest.logger.fail(val+ " has not been selected from "+fieldname);
+			BaseTest.logger.info("Screenshot captured: <a href="+getScreenshot(driver,"file")+">Screenshot</a>");
 			System.out.println(e.getMessage());
 		}
 	}
@@ -103,12 +103,12 @@ public class commonfunctions {
 		w.until(ExpectedConditions.alertIsPresent());
 		val = driver.switchTo().alert().getText();
 		driver.switchTo().alert().accept();
-		BaseTests.logger.pass("Getting alert "+val + " then clicked 'OK'");
+		BaseTest.logger.pass("Getting alert "+val + " then clicked 'OK'");
 		}
 		catch(Exception e)
 		{
-			BaseTests.logger.fail("Getting alert "+val + " not clicked 'OK'");
-			BaseTests.logger.info("Screenshot captured: <a href="+getScreenshot(driver,"file")+">Screenshot</a>");
+			BaseTest.logger.fail("Getting alert "+val + " not clicked 'OK'");
+			BaseTest.logger.info("Screenshot captured: <a href="+getScreenshot(driver,"file")+">Screenshot</a>");
 			System.out.println(e.getMessage());
 		}
 	}
@@ -122,12 +122,12 @@ public class commonfunctions {
 		w.until(ExpectedConditions.alertIsPresent());
 		val = driver.switchTo().alert().getText();
 		driver.switchTo().alert().dismiss();
-		BaseTests.logger.pass("Getting alert "+val + " then clicked 'Cancel'");
+		BaseTest.logger.pass("Getting alert "+val + " then clicked 'Cancel'");
 		}
 		catch(Exception e)
 		{
-			BaseTests.logger.fail("Getting alert "+val + " not clicked 'Cancel'");
-			BaseTests.logger.info("Screenshot captured: <a href="+getScreenshot(driver,"file")+">Screenshot</a>");
+			BaseTest.logger.fail("Getting alert "+val + " not clicked 'Cancel'");
+			BaseTest.logger.info("Screenshot captured: <a href="+getScreenshot(driver,"file")+">Screenshot</a>");
 			System.out.println(e.getMessage());
 		}
 	}
@@ -139,17 +139,17 @@ public class commonfunctions {
 		{
 		w.until(ExpectedConditions.elementToBeClickable(elm));
 		elm.click();
-		BaseTests.logger.pass(fieldname+ " has been Clicked");
+		BaseTest.logger.pass(fieldname+ " has been Clicked");
 		}
 		catch(Exception e)
 		{
-			BaseTests.logger.fail(fieldname+ " did not Clicked");
-			BaseTests.logger.info("Screenshot captured: <a href="+getScreenshot(driver,"file")+">Screenshot</a>");
+			BaseTest.logger.fail(fieldname+ " did not Clicked");
+			BaseTest.logger.info("Screenshot captured: <a href="+getScreenshot(driver,"file")+">Screenshot</a>");
 			System.out.println(e.getMessage());
 		}
 	}
 	//Move to element by mouse
-	public void MoveToElement(WebDriver driver,WebElement elm, String fieldname)
+	public void MoveToElement(WebDriver driver,WebElement elm,String fieldname)
 	{
 		w = new WebDriverWait(driver,30);
 		try
@@ -157,11 +157,11 @@ public class commonfunctions {
 		w.until(ExpectedConditions.elementToBeClickable(elm));
 		Actions act = new Actions(driver);
 		act.moveToElement(elm).build().perform();
-		BaseTests.logger.pass("Mouse has been moved to "+fieldname);
+		BaseTest.logger.pass("Mouse has been moved to "+fieldname);
 		}
 		catch(Exception e)
 		{
-			BaseTests.logger.fail(fieldname+ " did not Clicked");
+			BaseTest.logger.fail(fieldname+ " did not Clicked");
 			System.out.println(e.getMessage());
 		}
 	}
@@ -174,12 +174,12 @@ public class commonfunctions {
 			{
 			w.until(ExpectedConditions.visibilityOf(elm));
 			val = elm.isDisplayed();
-			BaseTests.logger.pass(fieldname+ " Displayed successfully");			
+			BaseTest.logger.pass(fieldname+ " Displayed successfully");			
 			}
 			catch(Exception e)
 			{
-				BaseTests.logger.fail(fieldname+ " not found");
-				BaseTests.logger.info("Screenshot captured: <a href="+getScreenshot(driver,"file")+">Screenshot</a>");
+				BaseTest.logger.fail(fieldname+ " not found");
+				BaseTest.logger.info("Screenshot captured: <a href="+getScreenshot(driver,"file")+">Screenshot</a>");
 				System.out.println(e.getMessage());
 			}
 			return val;
@@ -223,7 +223,7 @@ public class commonfunctions {
 			driver.switchTo().window(swindow);
 			elm.click();
 			driver.switchTo().window(fwindow);
-			BaseTests.logger.pass(fieldname+ " has been Selected");
+			BaseTest.logger.pass(fieldname+ " has been Selected");
 		}
 		//Enter value in text box on popup window	
 		public void ActionOnPopUpWindowsEnterValue(WebDriver driver, WebElement elm1,WebElement elm2,String val,String fieldname)
@@ -245,7 +245,7 @@ public class commonfunctions {
 			elm2.click();
 			driver.close();
 			driver.switchTo().window(fwindow);
-			BaseTests.logger.pass(fieldname+ " has been Entered and submitted");
+			BaseTest.logger.pass(fieldname+ " has been Entered and submitted");
 		}	
 }
 		
