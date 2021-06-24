@@ -3,14 +3,14 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.vtiger.tests.ContactsTests"/>
-      <class name="com.vtiger.tests.LeadTests"/>
+      <class name="com.vtiger.tests.AccountTest"/>
+      <class name="com.vtiger.tests.ContactsTest"/>
+      <class name="com.vtiger.tests.LeadTest"/>
+      <class name="com.vtiger.tests.RSSTest"/>
+      <class name="com.vtiger.tests.PotentialTest"/>
       <class name="com.vtiger.tests.CalenderTest"/>
-      <class name="com.vtiger.tests.ProductsTests"/>
-      <class name="com.vtiger.tests.AccountTests"/>
-      <class name="com.vtiger.tests.RSSTests"/>
-      <class name="com.vtiger.tests.ActivitiesTests"/>
-      <class name="com.vtiger.tests.PotentialTests"/>
+      <class name="com.vtiger.tests.ProductsTest"/>
+      <class name="com.vtiger.tests.ActivitiesTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
