@@ -3,14 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.vtiger.tests.ProductsTests">
+      <class name="com.vtiger.tests.ProductsTest">
         <methods>
+          <include name="CloseBrowser"/>
+          <include name="verifyCreateNewProduct_TC02"/>
           <include name="BeginLoadData"/>
           <include name="readSetting"/>
-          <include name="verifyCreateNewProduct_TC02"/>
-          <include name="CloseBrowser"/>
         </methods>
-      </class> <!-- com.vtiger.tests.ProductsTests -->
+      </class> <!-- com.vtiger.tests.ProductsTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -2,102 +2,102 @@
 <testng-results skipped="0" failed="1" ignored="27" total="55" passed="27">
   <reporter-output>
   </reporter-output>
-  <suite name="Command line suite" duration-ms="112280" started-at="2021-06-23T13:15:12 IST" finished-at="2021-06-23T13:17:04 IST">
+  <suite name="Command line suite" duration-ms="105681" started-at="2021-06-28T08:12:43 IST" finished-at="2021-06-28T08:14:29 IST">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="112280" started-at="2021-06-23T13:15:12 IST" finished-at="2021-06-23T13:17:04 IST">
+    <test name="Command line test" duration-ms="105681" started-at="2021-06-28T08:12:43 IST" finished-at="2021-06-28T08:14:29 IST">
       <class name="com.vtiger.tests.AccountTest">
-        <test-method status="PASS" signature="BeginLoadData()[pri:0, instance:com.vtiger.tests.AccountTest@3d99d22e]" name="BeginLoadData" is-config="true" duration-ms="803" started-at="2021-06-23T13:14:40 IST" finished-at="2021-06-23T13:14:41 IST">
+        <test-method status="PASS" signature="BeginLoadData()[pri:0, instance:com.vtiger.tests.AccountTest@3d99d22e]" name="BeginLoadData" is-config="true" duration-ms="799" started-at="2021-06-28T08:12:21 IST" finished-at="2021-06-28T08:12:22 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeginLoadData -->
-        <test-method status="PASS" signature="readSetting()[pri:0, instance:com.vtiger.tests.AccountTest@3d99d22e]" name="readSetting" is-config="true" duration-ms="30970" started-at="2021-06-23T13:14:41 IST" finished-at="2021-06-23T13:15:12 IST">
+        <test-method status="PASS" signature="readSetting()[pri:0, instance:com.vtiger.tests.AccountTest@3d99d22e]" name="readSetting" is-config="true" duration-ms="21804" started-at="2021-06-28T08:12:22 IST" finished-at="2021-06-28T08:12:43 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- readSetting -->
-        <test-method status="PASS" signature="verifyCreateNewAccountWithMandatoryFields_TC01()[pri:0, instance:com.vtiger.tests.AccountTest@3d99d22e]" name="verifyCreateNewAccountWithMandatoryFields_TC01" duration-ms="5512" started-at="2021-06-23T13:15:12 IST" finished-at="2021-06-23T13:15:17 IST">
+        <test-method status="PASS" signature="verifyCreateNewAccountWithMandatoryFields_TC01()[pri:0, instance:com.vtiger.tests.AccountTest@3d99d22e]" name="verifyCreateNewAccountWithMandatoryFields_TC01" duration-ms="4293" started-at="2021-06-28T08:12:43 IST" finished-at="2021-06-28T08:12:48 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCreateNewAccountWithMandatoryFields_TC01 -->
-        <test-method status="PASS" signature="verifyCreateNewAccountWithAllFields_TC02()[pri:1, instance:com.vtiger.tests.AccountTest@3d99d22e]" name="verifyCreateNewAccountWithAllFields_TC02" duration-ms="6136" started-at="2021-06-23T13:15:17 IST" finished-at="2021-06-23T13:15:23 IST">
+        <test-method status="PASS" signature="verifyCreateNewAccountWithAllFields_TC02()[pri:1, instance:com.vtiger.tests.AccountTest@3d99d22e]" name="verifyCreateNewAccountWithAllFields_TC02" duration-ms="5132" started-at="2021-06-28T08:12:48 IST" finished-at="2021-06-28T08:12:53 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCreateNewAccountWithAllFields_TC02 -->
-        <test-method status="PASS" signature="verifyAccountSearch_TC03()[pri:2, instance:com.vtiger.tests.AccountTest@3d99d22e]" name="verifyAccountSearch_TC03" duration-ms="2660" started-at="2021-06-23T13:15:23 IST" finished-at="2021-06-23T13:15:26 IST">
+        <test-method status="PASS" signature="verifyAccountSearch_TC03()[pri:2, instance:com.vtiger.tests.AccountTest@3d99d22e]" name="verifyAccountSearch_TC03" duration-ms="3258" started-at="2021-06-28T08:12:53 IST" finished-at="2021-06-28T08:12:56 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAccountSearch_TC03 -->
-        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:com.vtiger.tests.AccountTest@3d99d22e]" name="CloseBrowser" is-config="true" duration-ms="2461" started-at="2021-06-23T13:17:04 IST" finished-at="2021-06-23T13:17:07 IST">
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:com.vtiger.tests.AccountTest@3d99d22e]" name="CloseBrowser" is-config="true" duration-ms="1853" started-at="2021-06-28T08:14:29 IST" finished-at="2021-06-28T08:14:31 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
       </class> <!-- com.vtiger.tests.AccountTest -->
       <class name="com.vtiger.tests.ContactsTest">
-        <test-method status="PASS" signature="ContactSearchAndDelete_TC02()[pri:0, instance:com.vtiger.tests.ContactsTest@63e2203c]" name="ContactSearchAndDelete_TC02" duration-ms="4656" started-at="2021-06-23T13:16:03 IST" finished-at="2021-06-23T13:16:08 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ContactSearchAndDelete_TC02 -->
-        <test-method status="PASS" signature="CreateNewContact_TC01()[pri:0, instance:com.vtiger.tests.ContactsTest@63e2203c]" name="CreateNewContact_TC01" duration-ms="7731" started-at="2021-06-23T13:16:08 IST" finished-at="2021-06-23T13:16:16 IST">
+        <test-method status="PASS" signature="CreateNewContact_TC01()[pri:0, instance:com.vtiger.tests.ContactsTest@63e2203c]" name="CreateNewContact_TC01" duration-ms="7648" started-at="2021-06-28T08:13:30 IST" finished-at="2021-06-28T08:13:38 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateNewContact_TC01 -->
+        <test-method status="PASS" signature="ContactSearchAndDelete_TC02()[pri:1, instance:com.vtiger.tests.ContactsTest@63e2203c]" name="ContactSearchAndDelete_TC02" duration-ms="4497" started-at="2021-06-28T08:13:38 IST" finished-at="2021-06-28T08:13:42 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ContactSearchAndDelete_TC02 -->
       </class> <!-- com.vtiger.tests.ContactsTest -->
       <class name="com.vtiger.tests.PotentialTest">
-        <test-method status="PASS" signature="verifyCreateNewPotential_TC01()[pri:0, instance:com.vtiger.tests.PotentialTest@72b6cbcc]" name="verifyCreateNewPotential_TC01" duration-ms="5881" started-at="2021-06-23T13:16:32 IST" finished-at="2021-06-23T13:16:38 IST">
+        <test-method status="PASS" signature="verifyCreateNewPotential_TC01()[pri:0, instance:com.vtiger.tests.PotentialTest@72b6cbcc]" name="verifyCreateNewPotential_TC01" duration-ms="5726" started-at="2021-06-28T08:13:58 IST" finished-at="2021-06-28T08:14:04 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCreateNewPotential_TC01 -->
-        <test-method status="PASS" signature="verifyEditPotential_TC02()[pri:1, instance:com.vtiger.tests.PotentialTest@72b6cbcc]" name="verifyEditPotential_TC02" duration-ms="5856" started-at="2021-06-23T13:16:38 IST" finished-at="2021-06-23T13:16:43 IST">
+        <test-method status="PASS" signature="verifyEditPotential_TC02()[pri:1, instance:com.vtiger.tests.PotentialTest@72b6cbcc]" name="verifyEditPotential_TC02" duration-ms="5749" started-at="2021-06-28T08:14:04 IST" finished-at="2021-06-28T08:14:10 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEditPotential_TC02 -->
-        <test-method status="PASS" signature="verifyDuplicatePotential_TC03()[pri:2, instance:com.vtiger.tests.PotentialTest@72b6cbcc]" name="verifyDuplicatePotential_TC03" duration-ms="2122" started-at="2021-06-23T13:16:43 IST" finished-at="2021-06-23T13:16:46 IST">
+        <test-method status="PASS" signature="verifyDuplicatePotential_TC03()[pri:2, instance:com.vtiger.tests.PotentialTest@72b6cbcc]" name="verifyDuplicatePotential_TC03" duration-ms="2167" started-at="2021-06-28T08:14:10 IST" finished-at="2021-06-28T08:14:12 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDuplicatePotential_TC03 -->
-        <test-method status="PASS" signature="verifyDeletePotential_TC04()[pri:3, instance:com.vtiger.tests.PotentialTest@72b6cbcc]" name="verifyDeletePotential_TC04" duration-ms="441" started-at="2021-06-23T13:16:46 IST" finished-at="2021-06-23T13:16:46 IST">
+        <test-method status="PASS" signature="verifyDeletePotential_TC04()[pri:3, instance:com.vtiger.tests.PotentialTest@72b6cbcc]" name="verifyDeletePotential_TC04" duration-ms="385" started-at="2021-06-28T08:14:12 IST" finished-at="2021-06-28T08:14:12 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDeletePotential_TC04 -->
       </class> <!-- com.vtiger.tests.PotentialTest -->
       <class name="com.vtiger.tests.CalenderTest">
-        <test-method status="PASS" signature="LoadData()[pri:0, instance:com.vtiger.tests.CalenderTest@3224f60b]" name="LoadData" is-config="true" duration-ms="109" started-at="2021-06-23T13:15:55 IST" finished-at="2021-06-23T13:15:55 IST">
+        <test-method status="PASS" signature="LoadData()[pri:0, instance:com.vtiger.tests.CalenderTest@3224f60b]" name="LoadData" is-config="true" duration-ms="102" started-at="2021-06-28T08:13:23 IST" finished-at="2021-06-28T08:13:23 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoadData -->
-        <test-method status="PASS" signature="verifyCalendar_TC01()[pri:0, instance:com.vtiger.tests.CalenderTest@3224f60b]" name="verifyCalendar_TC01" duration-ms="4661" started-at="2021-06-23T13:15:55 IST" finished-at="2021-06-23T13:16:00 IST">
+        <test-method status="PASS" signature="verifyCalendar_TC01()[pri:0, instance:com.vtiger.tests.CalenderTest@3224f60b]" name="verifyCalendar_TC01" duration-ms="3829" started-at="2021-06-28T08:13:23 IST" finished-at="2021-06-28T08:13:27 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCalendar_TC01 -->
-        <test-method status="PASS" signature="verifyCreateNewAppointmentfromCalender_TC02()[pri:0, instance:com.vtiger.tests.CalenderTest@3224f60b]" name="verifyCreateNewAppointmentfromCalender_TC02" duration-ms="3686" started-at="2021-06-23T13:16:00 IST" finished-at="2021-06-23T13:16:03 IST">
+        <test-method status="PASS" signature="verifyCreateNewAppointmentfromCalender_TC02()[pri:0, instance:com.vtiger.tests.CalenderTest@3224f60b]" name="verifyCreateNewAppointmentfromCalender_TC02" duration-ms="3685" started-at="2021-06-28T08:13:27 IST" finished-at="2021-06-28T08:13:30 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCreateNewAppointmentfromCalender_TC02 -->
       </class> <!-- com.vtiger.tests.CalenderTest -->
       <class name="com.vtiger.tests.ProductsTest">
-        <test-method status="PASS" signature="verifySubMenusOnProductsPage_TC01()[pri:0, instance:com.vtiger.tests.ProductsTest@a7e666]" name="verifySubMenusOnProductsPage_TC01" duration-ms="3641" started-at="2021-06-23T13:16:46 IST" finished-at="2021-06-23T13:16:50 IST">
+        <test-method status="PASS" signature="verifySubMenusOnProductsPage_TC01()[pri:0, instance:com.vtiger.tests.ProductsTest@a7e666]" name="verifySubMenusOnProductsPage_TC01" duration-ms="3110" started-at="2021-06-28T08:14:12 IST" finished-at="2021-06-28T08:14:16 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySubMenusOnProductsPage_TC01 -->
-        <test-method status="FAIL" signature="verifyCreateNewProduct_TC02()[pri:1, instance:com.vtiger.tests.ProductsTest@a7e666]" name="verifyCreateNewProduct_TC02" duration-ms="2418" started-at="2021-06-23T13:16:50 IST" finished-at="2021-06-23T13:16:52 IST">
+        <test-method status="FAIL" signature="verifyCreateNewProduct_TC02()[pri:1, instance:com.vtiger.tests.ProductsTest@a7e666]" name="verifyCreateNewProduct_TC02" duration-ms="2262" started-at="2021-06-28T08:14:16 IST" finished-at="2021-06-28T08:14:18 IST">
           <exception class="org.openqa.selenium.NoAlertPresentException">
             <message>
               <![CDATA[no such alert
-  (Session info: chrome=91.0.4472.114)
+  (Session info: chrome=91.0.4472.124)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-RUV174U', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\Ravindra\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55775}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 6e13cd983615bffc2954909bc856d27f]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\Ravindra\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63703}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 45bb468bd6abb167d97725e0cb9e903c]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoAlertPresentException: no such alert
-  (Session info: chrome=91.0.4472.114)
+  (Session info: chrome=91.0.4472.124)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-RUV174U', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\Ravindra\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55775}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 6e13cd983615bffc2954909bc856d27f
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\Ravindra\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63703}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 45bb468bd6abb167d97725e0cb9e903c
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -156,77 +156,77 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCreateNewProduct_TC02 -->
-        <test-method status="PASS" signature="verifyCreateNewVendor_TC03()[pri:2, instance:com.vtiger.tests.ProductsTest@a7e666]" name="verifyCreateNewVendor_TC03" duration-ms="4428" started-at="2021-06-23T13:16:52 IST" finished-at="2021-06-23T13:16:57 IST">
+        <test-method status="PASS" signature="verifyCreateNewVendor_TC03()[pri:2, instance:com.vtiger.tests.ProductsTest@a7e666]" name="verifyCreateNewVendor_TC03" duration-ms="4443" started-at="2021-06-28T08:14:18 IST" finished-at="2021-06-28T08:14:22 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCreateNewVendor_TC03 -->
-        <test-method status="PASS" signature="verifyCreateNewPriceBook_TC04()[pri:3, instance:com.vtiger.tests.ProductsTest@a7e666]" name="verifyCreateNewPriceBook_TC04" duration-ms="3273" started-at="2021-06-23T13:16:57 IST" finished-at="2021-06-23T13:17:00 IST">
+        <test-method status="PASS" signature="verifyCreateNewPriceBook_TC04()[pri:3, instance:com.vtiger.tests.ProductsTest@a7e666]" name="verifyCreateNewPriceBook_TC04" duration-ms="3004" started-at="2021-06-28T08:14:22 IST" finished-at="2021-06-28T08:14:25 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCreateNewPriceBook_TC04 -->
       </class> <!-- com.vtiger.tests.ProductsTest -->
       <class name="com.vtiger.tests.ActivitiesTest">
-        <test-method status="PASS" signature="LoadData()[pri:0, instance:com.vtiger.tests.ActivitiesTest@57855c9a]" name="LoadData" is-config="true" duration-ms="283" started-at="2021-06-23T13:15:26 IST" finished-at="2021-06-23T13:15:26 IST">
+        <test-method status="PASS" signature="LoadData()[pri:0, instance:com.vtiger.tests.ActivitiesTest@57855c9a]" name="LoadData" is-config="true" duration-ms="159" started-at="2021-06-28T08:12:56 IST" finished-at="2021-06-28T08:12:56 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoadData -->
-        <test-method status="PASS" signature="verifyNewEvent_TC01()[pri:0, instance:com.vtiger.tests.ActivitiesTest@57855c9a]" name="verifyNewEvent_TC01" duration-ms="3794" started-at="2021-06-23T13:15:26 IST" finished-at="2021-06-23T13:15:30 IST">
+        <test-method status="PASS" signature="verifyNewEvent_TC01()[pri:0, instance:com.vtiger.tests.ActivitiesTest@57855c9a]" name="verifyNewEvent_TC01" duration-ms="3105" started-at="2021-06-28T08:12:56 IST" finished-at="2021-06-28T08:12:59 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyNewEvent_TC01 -->
-        <test-method status="PASS" signature="verifySearchActivities_TC02()[pri:1, instance:com.vtiger.tests.ActivitiesTest@57855c9a]" name="verifySearchActivities_TC02" duration-ms="4770" started-at="2021-06-23T13:15:30 IST" finished-at="2021-06-23T13:15:35 IST">
+        <test-method status="PASS" signature="verifySearchActivities_TC02()[pri:1, instance:com.vtiger.tests.ActivitiesTest@57855c9a]" name="verifySearchActivities_TC02" duration-ms="4088" started-at="2021-06-28T08:12:59 IST" finished-at="2021-06-28T08:13:03 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchActivities_TC02 -->
-        <test-method status="PASS" signature="DeleteActivities_TC03()[pri:2, instance:com.vtiger.tests.ActivitiesTest@57855c9a]" name="DeleteActivities_TC03" duration-ms="4608" started-at="2021-06-23T13:15:35 IST" finished-at="2021-06-23T13:15:40 IST">
+        <test-method status="PASS" signature="DeleteActivities_TC03()[pri:2, instance:com.vtiger.tests.ActivitiesTest@57855c9a]" name="DeleteActivities_TC03" duration-ms="4055" started-at="2021-06-28T08:13:03 IST" finished-at="2021-06-28T08:13:08 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DeleteActivities_TC03 -->
-        <test-method status="PASS" signature="verifyDuplicateOfActivity_TC04()[pri:3, instance:com.vtiger.tests.ActivitiesTest@57855c9a]" name="verifyDuplicateOfActivity_TC04" duration-ms="3200" started-at="2021-06-23T13:15:40 IST" finished-at="2021-06-23T13:15:43 IST">
+        <test-method status="PASS" signature="verifyDuplicateOfActivity_TC04()[pri:3, instance:com.vtiger.tests.ActivitiesTest@57855c9a]" name="verifyDuplicateOfActivity_TC04" duration-ms="2914" started-at="2021-06-28T08:13:08 IST" finished-at="2021-06-28T08:13:10 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDuplicateOfActivity_TC04 -->
-        <test-method status="PASS" signature="verifyEditActivity_TC05()[pri:4, instance:com.vtiger.tests.ActivitiesTest@57855c9a]" name="verifyEditActivity_TC05" duration-ms="12322" started-at="2021-06-23T13:15:43 IST" finished-at="2021-06-23T13:15:55 IST">
+        <test-method status="PASS" signature="verifyEditActivity_TC05()[pri:4, instance:com.vtiger.tests.ActivitiesTest@57855c9a]" name="verifyEditActivity_TC05" duration-ms="12222" started-at="2021-06-28T08:13:10 IST" finished-at="2021-06-28T08:13:23 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEditActivity_TC05 -->
       </class> <!-- com.vtiger.tests.ActivitiesTest -->
       <class name="com.vtiger.tests.RSSTest">
-        <test-method status="PASS" signature="VerifyRSSHomePage_TC01()[pri:0, instance:com.vtiger.tests.RSSTest@68bbe345]" name="VerifyRSSHomePage_TC01" duration-ms="951" started-at="2021-06-23T13:17:00 IST" finished-at="2021-06-23T13:17:01 IST">
+        <test-method status="PASS" signature="VerifyRSSHomePage_TC01()[pri:0, instance:com.vtiger.tests.RSSTest@68bbe345]" name="VerifyRSSHomePage_TC01" duration-ms="960" started-at="2021-06-28T08:14:25 IST" finished-at="2021-06-28T08:14:26 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyRSSHomePage_TC01 -->
-        <test-method status="PASS" signature="VerifyRSSLinksPresentOnPage_TC02()[pri:1, instance:com.vtiger.tests.RSSTest@68bbe345]" name="VerifyRSSLinksPresentOnPage_TC02" duration-ms="514" started-at="2021-06-23T13:17:01 IST" finished-at="2021-06-23T13:17:01 IST">
+        <test-method status="PASS" signature="VerifyRSSLinksPresentOnPage_TC02()[pri:1, instance:com.vtiger.tests.RSSTest@68bbe345]" name="VerifyRSSLinksPresentOnPage_TC02" duration-ms="490" started-at="2021-06-28T08:14:26 IST" finished-at="2021-06-28T08:14:27 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyRSSLinksPresentOnPage_TC02 -->
-        <test-method status="PASS" signature="VerifyAddRSSFeed_TC02()[pri:2, instance:com.vtiger.tests.RSSTest@68bbe345]" name="VerifyAddRSSFeed_TC02" duration-ms="2532" started-at="2021-06-23T13:17:01 IST" finished-at="2021-06-23T13:17:04 IST">
+        <test-method status="PASS" signature="VerifyAddRSSFeed_TC02()[pri:2, instance:com.vtiger.tests.RSSTest@68bbe345]" name="VerifyAddRSSFeed_TC02" duration-ms="2306" started-at="2021-06-28T08:14:27 IST" finished-at="2021-06-28T08:14:29 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyAddRSSFeed_TC02 -->
       </class> <!-- com.vtiger.tests.RSSTest -->
       <class name="com.vtiger.tests.LeadTest">
-        <test-method status="PASS" signature="LoadData()[pri:0, instance:com.vtiger.tests.LeadTest@1efed156]" name="LoadData" is-config="true" duration-ms="67" started-at="2021-06-23T13:16:16 IST" finished-at="2021-06-23T13:16:16 IST">
+        <test-method status="PASS" signature="LoadData()[pri:0, instance:com.vtiger.tests.LeadTest@1efed156]" name="LoadData" is-config="true" duration-ms="71" started-at="2021-06-28T08:13:42 IST" finished-at="2021-06-28T08:13:42 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoadData -->
-        <test-method status="PASS" signature="verifyLeadwithmandatoryfields_TC01()[pri:0, instance:com.vtiger.tests.LeadTest@1efed156]" name="verifyLeadwithmandatoryfields_TC01" duration-ms="2954" started-at="2021-06-23T13:16:16 IST" finished-at="2021-06-23T13:16:19 IST">
+        <test-method status="PASS" signature="verifyLeadwithmandatoryfields_TC01()[pri:0, instance:com.vtiger.tests.LeadTest@1efed156]" name="verifyLeadwithmandatoryfields_TC01" duration-ms="3071" started-at="2021-06-28T08:13:42 IST" finished-at="2021-06-28T08:13:46 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLeadwithmandatoryfields_TC01 -->
-        <test-method status="PASS" signature="verifyLeadwithAllFields_TC02()[pri:1, instance:com.vtiger.tests.LeadTest@1efed156]" name="verifyLeadwithAllFields_TC02" duration-ms="4683" started-at="2021-06-23T13:16:19 IST" finished-at="2021-06-23T13:16:24 IST">
+        <test-method status="PASS" signature="verifyLeadwithAllFields_TC02()[pri:1, instance:com.vtiger.tests.LeadTest@1efed156]" name="verifyLeadwithAllFields_TC02" duration-ms="4634" started-at="2021-06-28T08:13:46 IST" finished-at="2021-06-28T08:13:50 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLeadwithAllFields_TC02 -->
-        <test-method status="PASS" signature="verifydeleteLead_TC03()[pri:2, instance:com.vtiger.tests.LeadTest@1efed156]" name="verifydeleteLead_TC03" duration-ms="3824" started-at="2021-06-23T13:16:24 IST" finished-at="2021-06-23T13:16:27 IST">
+        <test-method status="PASS" signature="verifydeleteLead_TC03()[pri:2, instance:com.vtiger.tests.LeadTest@1efed156]" name="verifydeleteLead_TC03" duration-ms="3988" started-at="2021-06-28T08:13:50 IST" finished-at="2021-06-28T08:13:54 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifydeleteLead_TC03 -->
-        <test-method status="PASS" signature="verifychangeLeadStatus_TC04()[pri:3, instance:com.vtiger.tests.LeadTest@1efed156]" name="verifychangeLeadStatus_TC04" duration-ms="1107" started-at="2021-06-23T13:16:27 IST" finished-at="2021-06-23T13:16:29 IST">
+        <test-method status="PASS" signature="verifychangeLeadStatus_TC04()[pri:3, instance:com.vtiger.tests.LeadTest@1efed156]" name="verifychangeLeadStatus_TC04" duration-ms="1057" started-at="2021-06-28T08:13:54 IST" finished-at="2021-06-28T08:13:55 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifychangeLeadStatus_TC04 -->
-        <test-method status="PASS" signature="verifysearchLead_TC05()[pri:4, instance:com.vtiger.tests.LeadTest@1efed156]" name="verifysearchLead_TC05" duration-ms="3203" started-at="2021-06-23T13:16:29 IST" finished-at="2021-06-23T13:16:32 IST">
+        <test-method status="PASS" signature="verifysearchLead_TC05()[pri:4, instance:com.vtiger.tests.LeadTest@1efed156]" name="verifysearchLead_TC05" duration-ms="3202" started-at="2021-06-28T08:13:55 IST" finished-at="2021-06-28T08:13:58 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifysearchLead_TC05 -->
