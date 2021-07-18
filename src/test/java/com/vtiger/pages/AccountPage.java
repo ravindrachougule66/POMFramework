@@ -69,6 +69,7 @@ public class AccountPage extends HeaderPage{
 		ClickNewAccount();
 		cm.EnterValue(driver, actname, aname, "Account name");
 		cm.ClickElement(driver, savebtn, "Save button");
+		
 	}
 	
 	public void CreateNewAccountWithAllField(String aname,String ph, String web, String bcity) throws InterruptedException
