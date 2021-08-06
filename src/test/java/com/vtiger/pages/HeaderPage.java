@@ -24,7 +24,7 @@ public class HeaderPage {
 	WebElement searchbutton;	
 	@FindBy(xpath="(//input[@name='button'])[3]")
 	WebElement savebutton;	
-	@FindBy(xpath=("(//input[@type='submit'])[3]"))
+	@FindBy(xpath="(//input[@type='submit'])[3]")
 	WebElement deletebutton;
 	@FindBy(xpath="(//input[@name='button'])[2]")
 	WebElement cancelbutton;
