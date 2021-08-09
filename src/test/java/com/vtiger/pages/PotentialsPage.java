@@ -53,7 +53,7 @@ public class PotentialsPage extends HeaderPage{
 		
 		@FindBy(linkText="EDFG Group Limited")
 		WebElement EDFGGroup;
-
+		
 		public void CreateNewPotential(String pname,String amt,String cdate,String otype,String nstep,String lsource,String sstage,String prob)
 		{
 			ClickNewPotential();

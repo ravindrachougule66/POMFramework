@@ -92,6 +92,8 @@ public class HeaderPage {
 	WebElement NewSalesOrder;
 	@FindBy(linkText="New Invoice")
 	WebElement NewInvoice;
+	@FindBy(linkText="New Note")
+	WebElement NewNote;
 	
 	public void ClickNewInvoice() 
 	{
@@ -131,6 +133,10 @@ public class HeaderPage {
 	public void ClickNewPotential() 
 	{
 		cm.ClickElement(driver, NewPotential, "New Potential");
+	}
+	public void ClickNewNote() 
+	{
+		cm.ClickElement(driver, NewNote, "New Note");
 	}
 	public void ClickNewContact() 
 	{
